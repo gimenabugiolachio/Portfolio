@@ -1,0 +1,79 @@
+
+.contacto-container{
+  display: grid;
+  grid-template-columns: 300px 340px;
+  column-gap: 3em;
+  justify-content: center;
+  align-items: center;
+}
+
+.contacto-info{
+  display: grid;
+  row-gap: 1em;
+}
+
+.contacto-card{
+  background-color: #313131;
+  padding: .4em;
+  border-radius: .5em;
+  text-align: center;
+}
+
+.icono-card{
+  font-size: 1.8em;
+  margin-bottom: 2em;
+}
+
+.titulo,
+.subtitulo{
+  font-size: 1em;
+}
+
+.titulo{
+  font-weight: bold;
+}
+
+.subtitulo{
+  display: block;
+  margin-bottom: .75em;
+}
+
+.contacto-button{
+  color: #C18DBF;
+  font-size: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: .25em;
+  cursor: pointer;
+}
+
+.contacto-button-icon{
+  font-size: 1em;
+  transition: .3s;
+}
+
+.contacto-button:hover .contacto-button-icon{
+  transform: translateX(.25em);
+}
+
+.input-container{
+  position: relative;
+  margin-top: .1em;
+  margin-bottom: 1.9em;
+}
+
+.input{
+  width: 100%;
+  border: 2px solid #f3f3f3;
+  background-color: transparent;
+  padding: .6em 1.2em;
+  color: #f3f3f3;
+  border-radius: .5em;
+  letter-spacing: .5px;
+  transition: .3s;
+}
+
+button{
+  border: none;
+}

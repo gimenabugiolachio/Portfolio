@@ -1,3 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  font-family: 'Cairo', sans-serif;
+}
+
 .bodyPers{
   background: #232323;
   color: #f3f3f3;
@@ -35,4 +47,15 @@
 .button:hover::after{
   transform: scale(1);
   background-color: #5A4F73;
+}
+
+/*Section*/
+.section{
+  padding: 3.5em 0 2em;
+}
+
+.titulo-section{
+  text-align: center;
+  font-size: 3vw;
+  margin-bottom: 1em;
 }
