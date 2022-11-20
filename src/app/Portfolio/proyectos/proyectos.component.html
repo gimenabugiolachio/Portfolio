@@ -1,0 +1,74 @@
+<section id="proyectos" class="proyectos section vh-100">
+  <h2 class="titulo-section">Mis Proyectos</h2>
+  <div class="proyectos-cards-container">
+    <swiper class="project_cards my-swiper my_swiper" [config]="config"
+        style="--swiper-navigation-color: #D9A0BB;--swiper-pagination-color: #D9A0BB">
+        <ng-template swiperSlide class="swiper_slide swiper-slide">
+            <div class="proyecto-card">
+                <div class="proyecto-header" id="proyecto-header">
+                    <img src="./assets/PortfolioAP.jpg" alt="Imagen del proyecto">
+                </div>
+                <div class="proyecto-contenido">
+                    <h3 class="nombre" id="nombre">Portfolio Full Stack</h3>
+                    <p class="descripcion" id="descripcion">Portfolio realizado para curso Argentina Programa | Heroku | Firebase</p>
+                </div>
+            </div>
+        </ng-template>
+        <ng-template swiperSlide class="swiper_slide swiper-slide">
+            <div class="proyecto-card">
+                <div class="proyecto-header" id="proyecto-header">
+                    <img src="./assets/Calculadora.jpg" alt="Imagen del proyecto">
+                </div>
+                <div class="proyecto-contenido">
+                    <h3 class="nombre" id="nombre">Calculadora</h3>
+                    <p class="descripcion" id="descripcion">Realizada con HTML, CSS y JavaScript.</p>
+                </div>
+            </div>
+        </ng-template>
+        <ng-template swiperSlide class="swiper_slide swiper-slide">
+            <div class="proyecto-card">
+                <div class="proyecto-header" id="proyecto-header">
+                    <img src="./assets/Calendario.jpg" alt="Imagen del proyecto">
+                </div>
+                <div class="proyecto-contenido">
+                    <h3 class="nombre" id="nombre">Calendario</h3>
+                    <p class="descripcion" id="descripcion">Realizado con HTML, CSS y JavaScript. </p>
+                </div>
+            </div>
+        </ng-template>
+        <ng-template swiperSlide class="swiper_slide swiper-slide">
+            <div class="proyecto-card">
+                <div class="proyecto-header" id="proyecto-header">
+                    <img src="./assets/Pokedex.jpg" alt="Imagen del proyecto">
+                </div>
+                <div class="proyecto-contenido">
+                    <h3 class="nombre" id="nombre">Pokédex</h3>
+                    <p class="descripcion" id="descripcion">Realizada con API de Pokémon</p>
+                </div>
+            </div>
+        </ng-template>
+        <ng-template swiperSlide class="swiper_slide swiper-slide">
+            <div class="proyecto-card">
+                <div class="proyecto-header" id="proyecto-header">
+                    <img src="./assets/TaTeTi.jpg" alt="Imagen del proyecto">
+                </div>
+                <div class="proyecto-contenido">
+                    <h3 class="nombre" id="nombre">Ta-Te-Ti</h3>
+                    <p class="descripcion" id="descripcion">Realizado con Angular</p>
+                </div>
+            </div>
+        </ng-template>
+        <ng-template swiperSlide class="swiper_slide swiper-slide">
+            <div class="proyecto-card">
+                <div class="proyecto-header" id="proyecto-header">
+                    <img src="./assets/MathQuiz.jpg" alt="Imagen del proyecto">
+                </div>
+                <div class="proyecto-contenido">
+                    <h3 class="nombre" id="nombre">Math Quiz</h3>
+                    <p class="descripcion" id="descripcion">Juego de matemática realizado fuertemente con JavaScript.</p>
+                </div>
+            </div>
+        </ng-template>
+    </swiper>
+  </div>
+</section>

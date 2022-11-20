@@ -1,0 +1,175 @@
+button{
+  border: none;
+}
+
+body{
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  height: 100vh;
+  position: relative;
+  top: -6em;
+}
+
+.cards-container{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 940x;
+  gap: 15px;
+  margin: auto;
+  justify-items: center;
+  align-items: center;
+}
+
+.card{
+  height: 250px;
+  width: 310px;
+  overflow: hidden;
+  margin: auto;
+  padding: 10px;
+  border-radius: 10%;
+  border-left: 1px solid #686666;
+  border-bottom: 1px solid #686666;
+  transition: all .7s ease;
+  box-shadow: 0 1px 5px 0 rgba(0,0,0,0.3);
+  text-align: center;
+  background-color: #313131;
+}
+
+.card:hover{
+  height: 460px;
+  width: 310px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+}
+
+.card-encabezado img{
+  position: relative;
+  left: .2em;
+  bottom: 1em;
+  border-radius: 10%;
+  display: block;
+  width: 280px;
+  object-fit: cover;
+  margin-top: 30px;
+  transition: all .3 ease;
+}
+
+.card-encabezado{
+  position: relative;
+}
+
+.card-encabezado::before, .card-encabezado::after{
+  content: '';
+  position: absolute;
+  opacity: .6;
+}
+
+.card-encabezado::after{
+  border-radius: 50%;
+  z-index: 20;
+  background-color: #F9F871;
+  width: 50px;
+  height: 50px;
+  top: -8px;
+  right: 1px;
+}
+
+.card-encabezado::before{
+  width: 70px;
+  height: 70px;
+  bottom: -10px;
+  left: -10px;
+  border-radius: 60%;
+  background-color: #FF9EA1;
+  transform: rotate(120deg);
+}
+
+.card-iconos{
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 15px;
+  list-style: none;
+}
+
+.card-iconos li{
+  height: 35px;
+  width: 35px;
+  margin: 0 5px;
+  text-align: center;
+  transition: all .5s ease;
+  transform: scale(0);
+}
+
+.card-iconos .icon{
+  position: relative;
+  left: -.45em;
+}
+
+.card-iconos a{
+  text-decoration: none;
+  color: #f3f3f3;
+  font-size: 1.2em;
+}
+
+
+.desplazar{
+  opacity: 0;
+  transition: all .5s ease;
+  transform: translateY(-45deg);
+}
+
+.agrandar{
+  transform: scale(0);
+  opacity: 0;
+  transition: all .4s ease;
+}
+
+.card:hover .desplazar{
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.card:hover .agrandar{
+  opacity: 1;
+  transform: scale(1);
+}
+
+.info-personal{
+  color: #f3f3f3;
+}
+
+.institucion{
+  letter-spacing: 1px;
+  font-size: 1em;
+}
+
+.titulo{
+  font-size: .87em;
+}
+
+.fecha{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: .8em;
+  font-weight: bold;
+}
+
+.fecha p{
+  margin-left: .5em;
+}
+
+@media screen and (max-width: 600px) {
+  .cards-container{
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width: 852px) {
+  .cards-container{
+    gap: 5px;
+  }
+}
+
