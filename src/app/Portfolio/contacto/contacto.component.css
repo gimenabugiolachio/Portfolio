@@ -2,7 +2,7 @@
 .contacto-container{
   display: grid;
   grid-template-columns: 300px 340px;
-  column-gap: 3em;
+  column-gap: 4em;
   justify-content: center;
   align-items: center;
 }
@@ -59,15 +59,15 @@
 
 .input-container{
   position: relative;
-  margin-top: .1em;
-  margin-bottom: 1.9em;
+
+  margin-bottom: 1em;
 }
 
 .input{
-  width: 100%;
+  width: 70%;
   border: 2px solid #f3f3f3;
   background-color: transparent;
-  padding: .6em 1.2em;
+  padding: .4em .8em;
   color: #f3f3f3;
   border-radius: .5em;
   letter-spacing: .5px;
@@ -76,4 +76,8 @@
 
 button{
   border: none;
+}
+
+label{
+  font-size: .8em;
 }

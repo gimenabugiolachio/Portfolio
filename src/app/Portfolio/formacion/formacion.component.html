@@ -1,129 +1,112 @@
 <section id="formacion" class="formacion section vh-100">
   <h2 class="titulo-section">Formación</h2>
-
-  <body>
-    <div class="cards-container">
-      <div class="card">
-        <div class="card-encabezado">
-          <img src="./assets/blue.jpg" alt="">
+  <div class="cards-container">
+    <ul class="educacion-cards">
+      <li class="educacion-card">
+        <div class="educacion-card-img">
+            <img src="./assets/IALAB.png" alt="Imagen de Institucion">
         </div>
-        <div class="card-iconos">
-          <li class="agrandar button"><a href="#" target="_blank">
-              <fa-icon [icon]="faGlobe" class="icon agrandar"></fa-icon>
-            </a></li>
-          <li class="agrandar button"><a href="#" target="_blank">
-              <fa-icon [icon]="faFacebook" class="icon agrandar"></fa-icon>
-            </a></li>
+        <div class="educacion-card-content">
+            <h3 id="nombre">UBA IALAB</h3>
+            <p class="text">Formación en datos e IA</p>
+            <span class="fechas">12/2022 a actualidad</span>
+            <span class="text">
+               <a href=""></a>
+            </span>
         </div>
-        <div class="card-contenido">
-          <div class="info-personal institucion desplazar">
-            <p>Blue Patagon</p>
+        <div class="buttons">
+            <button routerLink="" >
+                <fa-icon [icon]="faPenToSquare" class="icon"></fa-icon>
+            </button>
+            <button>
+                <fa-icon [icon]="faTrashCan" class="icon"></fa-icon>
+            </button>
+        </div>
+    </li>
+        <li class="educacion-card">
+            <div class="educacion-card-img">
+                <img src="./assets/UTN-LOGO.jpg" alt="Imagen de Institucion">
+            </div>
+            <div class="educacion-card-content">
+                <h3 id="nombre">Univertidad Tecnológica Nacional</h3>
+                <p class="text">Desarrollo en Java</p>
+                <span class="fechas">10/2022 al 12/2022</span>
+                <span class="text">
+                   <a href=""></a>
+                </span>
+            </div>
+            <div class="buttons">
+                <button routerLink="" >
+                    <fa-icon [icon]="faPenToSquare" class="icon"></fa-icon>
+                </button>
+                <button>
+                    <fa-icon [icon]="faTrashCan" class="icon"></fa-icon>
+                </button>
+            </div>
+        </li>
+        <li class="educacion-card">
+          <div class="educacion-card-img">
+              <img src="./assets/blue.jpg" alt="Imagen de Institucion">
           </div>
-          <div class="info-personal titulo desplazar">
-            <p>Data Analytics Tableau</p>
+          <div class="educacion-card-content">
+              <h3 id="nombre">DataBrotes - DataSchool</h3>
+              <p class="text">Data Analytics Tableau</p>
+              <span class="fechas">10/2022 al 12/2022</span>
+              <span class="text">
+                 <a href=""></a>
+              </span>
           </div>
-          <div class="info-personal fecha desplazar">
-            <fa-icon [icon]="faCalendarDays"></fa-icon>
-            <p>10/2022 a Actualidad</p>
+          <div class="buttons">
+              <button routerLink="" >
+                  <fa-icon [icon]="faPenToSquare" class="icon"></fa-icon>
+              </button>
+              <button>
+                  <fa-icon [icon]="faTrashCan" class="icon"></fa-icon>
+              </button>
           </div>
+      </li>
+      <li class="educacion-card">
+        <div class="educacion-card-img">
+            <img src="./assets/YoProgramoAP.jpg" alt="Imagen de Institucion">
         </div>
-        <div class="card-acciones">
-          <button class="botones button agrandar">
-            Enviar
-          </button>
+        <div class="educacion-card-content">
+            <h3 id="nombre">Argentina Programa</h3>
+            <p class="text">Desarrollo Full Stack</p>
+            <span class="fechas">02/2022 al 10/2022</span>
+            <span class="text">
+               <a href=""></a>
+            </span>
         </div>
+        <div class="buttons">
+            <button routerLink="" >
+                <fa-icon [icon]="faPenToSquare" class="icon"></fa-icon>
+            </button>
+            <button>
+                <fa-icon [icon]="faTrashCan" class="icon"></fa-icon>
+            </button>
+        </div>
+    </li>
+    <li class="educacion-card">
+      <div class="educacion-card-img">
+          <img src="./assets/unpaz-logo.jpg" alt="Imagen de Institucion">
       </div>
-      <div class="card">
-        <div class="card-encabezado">
-          <img src="./assets/UTN-LOGO.jpg" alt="">
-        </div>
-        <div class="card-iconos">
-          <li class="agrandar button"><a href="#" target="_blank">
-              <fa-icon [icon]="faGlobe" class="icon agrandar"></fa-icon>
-            </a></li>
-          <li class="agrandar button"><a href="#" target="_blank">
-              <fa-icon [icon]="faFacebook" class="icon agrandar"></fa-icon>
-            </a></li>
-        </div>
-        <div class="card-contenido">
-          <div class="info-personal institucion desplazar">
-            <p>Universidad Tecnológica Nacional</p>
-          </div>
-          <div class="info-personal titulo desplazar">
-            <p>Desarrollo en Java</p>
-          </div>
-          <div class="info-personal fecha desplazar">
-            <fa-icon [icon]="faCalendarDays"></fa-icon>
-            <p>09/2022 a 11/2022</p>
-          </div>
-        </div>
-        <div class="card-acciones">
-          <button class="botones button agrandar">
-            Enviar
-          </button>
-        </div>
+      <div class="educacion-card-content">
+          <h3 id="nombre">Univertidad Nacional de José C. Paz</h3>
+          <p class="text">Licenciatura en Tecnologías de la Información</p>
+          <span class="fechas">03/2020 a actualidad</span>
+          <span class="text">
+             <a href=""></a>
+          </span>
       </div>
-      <div class="card">
-        <div class="card-encabezado">
-          <img src="./assets/unpaz-logo.jpg" alt="">
-        </div>
-        <div class="card-iconos">
-          <li class="agrandar button"><a href="#" target="_blank">
-              <fa-icon [icon]="faGlobe" class="icon agrandar"></fa-icon>
-            </a></li>
-          <li class="agrandar button"><a href="#" target="_blank">
-              <fa-icon [icon]="faFacebook" class="icon agrandar"></fa-icon>
-            </a></li>
-        </div>
-        <div class="card-contenido">
-          <div class="info-personal institucion desplazar">
-            <p>Universidad Nacional de José C Paz</p>
-          </div>
-          <div class="info-personal titulo desplazar">
-            <p>Licenciatura en Tecnologías de la Información</p>
-          </div>
-          <div class="info-personal fecha desplazar">
-            <fa-icon [icon]="faCalendarDays"></fa-icon>
-            <p>03/2020 a Actualidad</p>
-          </div>
-        </div>
-        <div class="card-acciones">
-          <button class="botones button agrandar">
-            Enviar
+      <div class="buttons">
+          <button routerLink="" >
+              <fa-icon [icon]="faPenToSquare" class="icon"></fa-icon>
           </button>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-encabezado">
-          <img src="./assets/YoProgramoAP.jpg" alt="">
-        </div>
-        <div class="card-iconos">
-          <li class="agrandar button"><a href="#" target="_blank">
-              <fa-icon [icon]="faGlobe" class="icon agrandar"></fa-icon>
-            </a></li>
-          <li class="agrandar button"><a href="#" target="_blank">
-              <fa-icon [icon]="faFacebook" class="icon agrandar"></fa-icon>
-            </a></li>
-        </div>
-        <div class="card-contenido">
-          <div class="info-personal institucion desplazar">
-            <p>Argentina Programa</p>
-          </div>
-          <div class="info-personal titulo desplazar">
-            <p>Desarrollo Full Stack</p>
-          </div>
-          <div class="info-personal fecha desplazar">
-            <fa-icon [icon]="faCalendarDays"></fa-icon>
-            <p>02/2022 al 10/2022</p>
-          </div>
-        </div>
-        <div class="card-acciones">
-          <button class="botones button agrandar">
-            Enviar
+          <button>
+              <fa-icon [icon]="faTrashCan" class="icon"></fa-icon>
           </button>
-        </div>
       </div>
-    </div>
-  </body>
-
+  </li>
+    </ul>
+</div>
 </section>
