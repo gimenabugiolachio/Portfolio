@@ -10,7 +10,8 @@ import { faObjectGroup } from '@fortawesome/free-solid-svg-icons';
 import { faLightbulb } from '@fortawesome/free-solid-svg-icons';
 import { faPeopleGroup } from '@fortawesome/free-solid-svg-icons';
 import { faBrain } from '@fortawesome/free-solid-svg-icons';
-
+import { faCirclePlus } from '@fortawesome/free-solid-svg-icons';
+import { faPenToSquare } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-skills',
@@ -30,6 +31,8 @@ export class SkillsComponent implements OnInit {
  idea=faLightbulb;
  equipo=faPeopleGroup;
  resolucion=faBrain;
+ faCirclePlus=faCirclePlus;
+ faPenToSquare=faPenToSquare;
 
   constructor() { }
 
