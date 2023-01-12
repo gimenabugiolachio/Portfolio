@@ -49,9 +49,27 @@ html{
   background-color: #5A4F73;
 }
 
+.button-plus{
+  background-color: transparent;
+  border: none;
+  color: #f3f3f3;
+  font-size: 1.5em;
+  position: relative;
+  left: .8em;
+}
+
+.button-edit{
+  background-color: transparent;
+  border: none;
+  color: #f3f3f3;
+  font-size: 1.5em;
+  position: relative;
+  left: 1.2em;
+}
+
 /*Section*/
 .section{
-  padding: 3.5em 0 2em;
+  padding: 4em 0 2em;
 }
 
 .titulo-section{
@@ -59,3 +77,5 @@ html{
   font-size: 3vw;
   margin-bottom: 1em;
 }
+
+

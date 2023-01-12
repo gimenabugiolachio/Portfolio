@@ -1,8 +1,13 @@
 <nav class="navbar fixed-top navbar-expand-lg" style="background-color: #313131;">
   <div class="container-fluid">
-   <app-animacion></app-animacion>
-    <div class="nav" id="navbarText">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+    <app-animacion></app-animacion>
+    <button class="navbar-toggler shadow-none me-3" type="button" data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+      aria-label="Toggle navigation">
+      <fa-icon [icon]="faBars" class="navbar-toggler-icon nav-toggle-icon nav_link"></fa-icon>
+    </button>
+    <div #navMenu class="nav_menu_collapse collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+      <ul class="navbar-nav mb-2 mb-lg-0">
         <li class="nav-item">
           <a class="nav-link" aria-current="page" href="#inicio">Inicio</a>
         </li>
@@ -21,42 +26,12 @@
         <li class="nav-item">
           <a class="nav-link" href="#contacto">Contacto</a>
         </li>
-      </ul>
-
-       <!--Modal login-->
-    <ng-template  #content let-modal>
-      <div class="modal-header">
-        <h4 class="modal-title" id="modal-basic-title">Iniciar Sesión</h4>
-        <button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss()"></button>
-      </div>
-      <div class="modal-body">
-        <form>
-          <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Email</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-          </div>
-          <div class="mb-3">
-            <label for="exampleInputPassword1" class="form-label">Contraseña</label>
-            <input type="password" class="form-control" id="exampleInputPassword1">
-          </div>
-          <button type="submit" class="btn button ingresar">Ingresar</button>
-        </form>
-      </div>
-    </ng-template>
-    <button class="btn button login" (click)="open(content)"><fa-icon [icon]="faUser"></fa-icon></button>
-    </div>
-  </div>
-</nav>
-
-<!--<nav class="navbar navbar-dark bg-dark fixed-top">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Gimena Bugiolachio</a>
-
-    Modal Login
-      <ng-template  #content let-modal>
+        <li>
+            <!--Modal login-->
+      <ng-template #content let-modal>
         <div class="modal-header">
           <h4 class="modal-title" id="modal-basic-title">Iniciar Sesión</h4>
-          <button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss()"></button>
+          <button type="button" class="btn-close btn-close-white" aria-label="Close" (click)="modal.dismiss()"></button>
         </div>
         <div class="modal-body">
           <form>
@@ -73,41 +48,10 @@
         </div>
       </ng-template>
       <button class="btn button login" (click)="open(content)"><fa-icon [icon]="faUser"></fa-icon></button>
+        </li>
+      </ul>
 
 
-
-    Menú Navegación
-    <pre>{{ closeResult }}</pre>
-    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
-      <div class="offcanvas-header">
-        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-      </div>
-      <div class="offcanvas-body">
-        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#inicio">Inicio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#sobre">Sobre Mi</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#formacion">Formación</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#skills">Hard & Soft Skills</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#proyectos">Mis Proyectos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contacto">Contacto</a>
-          </li>
-        </ul>
-      </div>
     </div>
   </div>
 </nav>
--->

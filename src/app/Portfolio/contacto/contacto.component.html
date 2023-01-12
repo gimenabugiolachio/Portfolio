@@ -1,20 +1,16 @@
 <section id="contacto" class="contacto section vh-80">
-  <h2 class="titulo-section">Contacto</h2>
-
-
-
-
+  <h2 class="h2 titulo-section">Contacto</h2>
   <div class="contacto-container container grid">
     <div class="contacto-info">
       <div class="contacto-card">
         <fa-icon [icon]="mail" class="icono-card"></fa-icon>
-        <h3 class="titulo">Email</h3>
+        <h3 class="h3 titulo">Email</h3>
         <span class="subtitulo">gimena.bugiolachio@gmail.com</span>
         <span class="contacto-button">Escribime<fa-icon [icon]="send" class="contacto-button-icon"></fa-icon></span>
       </div>
       <div class="contacto-card">
         <fa-icon [icon]="wpp" class="icono-card"></fa-icon>
-        <h3 class="titulo">Whatsapp</h3>
+        <h3 class="h3 titulo">Whatsapp</h3>
         <span class="subtitulo">11 2390-0493</span>
         <span class="contacto-button">Escribime<fa-icon [icon]="send" class="contacto-button-icon"></fa-icon></span>
       </div>
@@ -23,23 +19,24 @@
     <div class="contacto-contenido">
       <form action="" class="contacto-form">
           <div class="input-container">
-            <input type="text" class="input">
-            <label for="">Nombre</label>
+            <input type="text" class="input" >
+            <span>Nombre</span>
           </div>
           <div class="input-container">
-            <input type="tel" class="input">
-            <label for="">Teléfono</label>
+            <input type="tel" class="input" >
+            <span>Teléfono</span>
           </div>
         <div class="input-container">
-          <input type="email" class="input">
-          <label for="">Email</label>
+          <input type="email" class="input" >
+          <span>Email</span>
         </div>
         <div class="input-container textarea">
           <textarea name="" id="" cols="25" rows="5" class="input"></textarea>
-          <label for="">Mensaje</label>
+          <span>Mensaje</span>
         </div>
         <button type="submit" class="button">
-          Enviar<fa-icon [icon]="paper"></fa-icon></button>
+          Enviar<fa-icon [icon]="paper"></fa-icon>
+        </button>
       </form>
     </div>
   </div>

@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import SwiperCore, { Keyboard, Pagination, Navigation, Autoplay, SwiperOptions } from 'swiper';
 SwiperCore.use([Keyboard, Pagination, Navigation, Autoplay]);
+import { faCirclePlus } from '@fortawesome/free-solid-svg-icons';
+import { faPenToSquare } from '@fortawesome/free-solid-svg-icons';
+import { faTrashCan } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-proyectos',
@@ -8,6 +11,11 @@ SwiperCore.use([Keyboard, Pagination, Navigation, Autoplay]);
   styleUrls: ['./proyectos.component.css']
 })
 export class ProyectosComponent implements OnInit {
+  faPenToSquare=faPenToSquare;
+  faTrashCan=faTrashCan;
+  faCirclePlus=faCirclePlus;
+
+
   config: SwiperOptions = {
     loopedSlides: 5,
     initialSlide: 0,
@@ -43,6 +51,8 @@ export class ProyectosComponent implements OnInit {
       }
     }
   }
+
+
   constructor() { }
 
   ngOnInit(): void {
