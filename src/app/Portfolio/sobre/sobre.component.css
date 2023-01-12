@@ -3,8 +3,6 @@ a{
   color: #f3f3f3;
 }
 
-
-
 .acerca-container{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -18,10 +16,22 @@ a{
   justify-self: center;
 }
 
-.acerca-titulo{
-  font-size: 1.5vw;
-  margin-bottom: .75em;
-}
+.acerca-titulo {
+  display: block;
+  white-space: nowrap;
+  border-right: 2px solid #C18DBF;
+  width: 19ch;
+  animation: typing 6s steps(17), blink .7s infinite;
+  overflow:hidden;
+  }
+
+  @keyFrames typing {
+  from { width: 0}
+  }
+
+  @keyFrames blink {
+   50% { border-color: transparent}
+  }
 
 .acerca-descripcion{
   text-align: justify;

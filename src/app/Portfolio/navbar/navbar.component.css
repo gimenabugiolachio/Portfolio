@@ -36,14 +36,14 @@
 
 .nav-item {
   position: relative;
-  margin-left: 1em;
+  margin-left: 1.5em;
   text-align: center;
 }
 
 .nav-item::after {
   content: '';
   position: absolute;
-  left: .7em;
+  left: 0;
   bottom: -2px;
   height: 2px;
   width: 0;
@@ -63,8 +63,6 @@
 .navbar li a {
   text-decoration: none;
   color: #f3f3f3;
-  margin-left: 1.5em;
-  align-items: center;
 }
 
 .nav li a:hover {
@@ -73,3 +71,13 @@
 }
 
 
+fa-icon{
+  color: #f3f3f3;
+  border: none;
+}
+
+@media screen and (max-width: 992px){
+  .nav-item:hover::after {
+    width: 0%;
+  }
+}

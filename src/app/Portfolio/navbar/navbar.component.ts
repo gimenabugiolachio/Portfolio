@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { faUser } from '@fortawesome/free-solid-svg-icons';
 import { faRightFromBracket } from '@fortawesome/free-solid-svg-icons';
 import { NgbModal} from '@ng-bootstrap/ng-bootstrap';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-navbar',
@@ -11,6 +12,7 @@ import { NgbModal} from '@ng-bootstrap/ng-bootstrap';
 
 export class NavbarComponent implements OnInit {
   faUser=faUser;
+  faBars=faBars;
   faRightFromBracket=faRightFromBracket;
   closeResult = '';
   constructor(private modalService: NgbModal) { }

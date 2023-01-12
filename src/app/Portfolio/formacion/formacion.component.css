@@ -44,15 +44,16 @@ ul{
 }
 
 .educacion-card-content h3 {
-  margin-top: .6em;
-  font-size: .8em;
+  margin-top: .9em;
+  margin-bottom: .9em;
+  font-size: .9em;
 }
 
 .text {
   color: #c2c0c0;
-  font-size: .7vw;
+  font-size: .8vw;
   letter-spacing: 1px;
-  margin-top: 0.5em;
+  margin-bottom: 0.5em;
 }
 
 .buttons{
@@ -69,5 +70,24 @@ ul{
 }
 
 .buttons button:hover{
+  color: #D9A0BB;
+}
+
+.fechas{
+  font-size: .8vw;
+  margin-bottom: .5em;
+}
+
+.certi{
+  position: relative;
+  top: -.4em;
+  left: 1em;
+}
+
+.doc{
+  color: #f3f3f3;
+}
+
+.doc:hover{
   color: #D9A0BB;
 }

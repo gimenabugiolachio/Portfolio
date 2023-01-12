@@ -12,8 +12,8 @@ import { faTrashCan } from '@fortawesome/free-solid-svg-icons';
 })
 export class ProyectosComponent implements OnInit {
   faPenToSquare=faPenToSquare;
-faTrashCan=faTrashCan;
-faCirclePlus=faCirclePlus;
+  faTrashCan=faTrashCan;
+  faCirclePlus=faCirclePlus;
 
 
   config: SwiperOptions = {
