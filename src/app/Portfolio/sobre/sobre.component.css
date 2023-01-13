@@ -1,52 +1,58 @@
-a{
+a {
   text-decoration: none;
   color: #f3f3f3;
 }
 
-.acerca-container{
+.acerca-container {
+  position: relative;
+  top: 3em;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   column-gap: 3em;
   align-items: center;
 }
 
-.acerca-container img{
+.acerca-container img {
   width: 20em;
-  border-radius:50%;
+  border-radius: 50%;
   justify-self: center;
 }
 
 .acerca-titulo {
   display: block;
   white-space: nowrap;
-  border-right: 2px solid #C18DBF;
-  width: 19ch;
-  animation: typing 6s steps(17), blink .7s infinite;
-  overflow:hidden;
-  }
+  border-right: 2px solid #D49BB0;
+  width: 20ch;
+  font-size: 1.5em;
+  animation: typing 6s steps(17), blink .7s infinite linear;
+  overflow: hidden;
+}
 
-  @keyFrames typing {
-  from { width: 0}
+@keyframes typing {
+  from {
+    width: 0
   }
+}
 
-  @keyFrames blink {
-   50% { border-color: transparent}
+@keyframes blink {
+  50% {
+    border-color: transparent
   }
+}
 
-.acerca-descripcion{
+.acerca-descripcion {
   text-align: justify;
-  padding-right: 6em;
   margin-bottom: 1.5em;
 }
 
-.acerca-info{
- justify-content: center;
+.acerca-info {
+  justify-content: center;
   display: flex;
   column-gap: 2em;
   margin-bottom: 3em;
 }
 
-.acerca-box{
+.acerca-box {
   text-align: center;
   border-radius: 1em;
   width: 150px;
@@ -54,30 +60,27 @@ a{
   box-shadow: 0 10px 20px #00000080;
 }
 
-.acerca-box:hover{
-  border: 1px solid #C18DBF;
+.acerca-box:hover {
+  border: 1px solid #D49BB0;
 }
 
-.acerca-icon{
-  font-size: 1.5em;
-  color: #C18DBF;
-  margin-bottom: .75em;
-}
-
-.acerca-encabezado{
+.acerca-encabezado {
   font-size: 1.1vw;
 }
 
-.acerca-subtitulo{
+.acerca-subtitulo {
   font-size: .9vw;
 }
 
-.buttons-acerca{
+.buttons-acerca {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  position: relative;
+  top: 2em;
 }
 
-.buttons-acerca a{
+.buttons-acerca a {
   letter-spacing: 1px;
 }

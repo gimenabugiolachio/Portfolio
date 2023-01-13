@@ -4,6 +4,8 @@ SwiperCore.use([Keyboard, Pagination, Navigation, Autoplay]);
 import { faCirclePlus } from '@fortawesome/free-solid-svg-icons';
 import { faPenToSquare } from '@fortawesome/free-solid-svg-icons';
 import { faTrashCan } from '@fortawesome/free-solid-svg-icons';
+import { faDesktop } from '@fortawesome/free-solid-svg-icons';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
 @Component({
   selector: 'app-proyectos',
@@ -14,7 +16,8 @@ export class ProyectosComponent implements OnInit {
   faPenToSquare=faPenToSquare;
   faTrashCan=faTrashCan;
   faCirclePlus=faCirclePlus;
-
+  faDesktop=faDesktop;
+  faGithub=faGithub;
 
   config: SwiperOptions = {
     loopedSlides: 5,

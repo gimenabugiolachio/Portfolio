@@ -13,7 +13,7 @@
   width: 100%;
   padding-left: 2%;
   padding-right: 2%;
-  box-shadow:  0 10px 20px #00000080;
+  box-shadow: 0 10px 20px #00000080;
   padding-top: 0.62em;
   background-color: rgba(48, 47, 47, 0.3);
 }
@@ -23,7 +23,7 @@
 }
 
 .proyecto-card {
-  box-shadow:  0 10px 20px #00000080;
+  box-shadow: 0 10px 20px #00000080;
   border-radius: 1em;
   overflow: hidden;
   height: 270px;
@@ -38,7 +38,7 @@
 }
 
 .proyecto-card:hover {
-  border: 1px solid #C18DBF;
+  border: 1px solid #D49BB0;
   transform: scale(1.1);
 }
 
@@ -47,7 +47,7 @@
 }
 
 .swiper-pagination-bullet-active {
-  background: #C18DBF;
+  background: #D49BB0;
 }
 
 .proyecto-header {
@@ -67,10 +67,51 @@
   padding: 10px 6px;
 }
 
-#nombre{
+#nombre {
   font-size: 1.3vw;
 }
 
-#descripcion{
+#descripcion {
   font-size: .9vw;
 }
+
+.crud {
+  position: absolute;
+  left: 75%;
+}
+
+.crud button {
+  border: none;
+  margin-left: .5em;
+  background-color: transparent;
+  color: #f3f3f3;
+}
+
+.crud button:hover {
+  color: #D49BB0;
+}
+
+.buttons-vista button {
+  border: none;
+  margin-left: .5em;
+  background-color: #232323;
+  padding: .2em .4em;
+  border-radius: .3em;
+  color: #f3f3f3;
+}
+
+.buttons-vista {
+  position: relative;
+  top: 1em;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  transition: .2s;
+}
+
+.buttons-vista button:hover{
+  background-color: #f3f3f3;
+  color: #D49BB0;
+}
+
+
