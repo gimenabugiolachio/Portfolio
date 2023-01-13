@@ -1,22 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap');
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-html{
+html {
   font-family: 'Cairo', sans-serif;
 }
 
-.bodyPers{
+.bodyPers {
   background: #232323;
   color: #f3f3f3;
 }
 
 /*Buttons*/
-.button{
+.button {
   display: inline-flex;
   align-items: center;
   column-gap: .5em;
@@ -29,7 +29,7 @@ html{
   z-index: 1;
 }
 
-.button::after{
+.button::after {
   position: absolute;
   content: '';
   left: 0;
@@ -44,38 +44,38 @@ html{
   transition: .2s;
 }
 
-.button:hover::after{
+.button:hover::after {
   transform: scale(1);
   background-color: #5A4F73;
 }
 
-.button-plus{
+.button-plus {
   background-color: transparent;
   border: none;
   color: #f3f3f3;
   font-size: 1.5em;
   position: relative;
   left: .8em;
+  top: -.1em;
 }
 
-.button-edit{
+.button-edit {
   background-color: transparent;
   border: none;
   color: #f3f3f3;
   font-size: 1.5em;
   position: relative;
+  top: -.1em;
   left: 1.2em;
 }
 
 /*Section*/
-.section{
+.section {
   padding: 4em 0 2em;
 }
 
-.titulo-section{
+.titulo-section {
   text-align: center;
   font-size: 3vw;
   margin-bottom: 1em;
 }
-
-
