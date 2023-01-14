@@ -35,7 +35,7 @@ export class SkillsComponent implements OnInit {
  faPenToSquare=faPenToSquare;
 
   constructor() { }
-
+  isLogged = false;
   ngOnInit(): void {
   }
 

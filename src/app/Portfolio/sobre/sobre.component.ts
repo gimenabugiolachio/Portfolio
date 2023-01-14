@@ -18,9 +18,9 @@ export class SobreComponent implements OnInit {
   faFileLines=faFileLines;
   faCirclePlus =faCirclePlus;
   faPenToSquare=faPenToSquare;
-  
-  constructor() { }
 
+  constructor() { }
+  isLogged = false;
   ngOnInit(): void {
   }
 

@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { faUser } from '@fortawesome/free-solid-svg-icons';
-import { faRightFromBracket } from '@fortawesome/free-solid-svg-icons';
-import { NgbModal} from '@ng-bootstrap/ng-bootstrap';
+import { faArrowRightFromBracket } from '@fortawesome/free-solid-svg-icons';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
+
 
 @Component({
   selector: 'app-navbar',
@@ -11,18 +12,19 @@ import { faBars } from '@fortawesome/free-solid-svg-icons';
 })
 
 export class NavbarComponent implements OnInit {
+  isLogged = false;
+
   faUser=faUser;
   faBars=faBars;
-  faRightFromBracket=faRightFromBracket;
-  closeResult = '';
-  constructor(private modalService: NgbModal) { }
+  faArrowRightFromBracket=faArrowRightFromBracket;
+
+  constructor(private router: Router) { }
 
   ngOnInit(): void { }
-  open(content: any) {
-		this.modalService.open(content, { ariaLabelledBy: 'Iniciar Sesión' }).result.then(
-			(result) => {
-				this.closeResult = `${result}`;
-			}
-		);
-	}
+
+  login():void{
+    this.router.navigate(['/inicio-sesion']);
+  }
+
+
 }

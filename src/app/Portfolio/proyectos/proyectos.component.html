@@ -1,7 +1,7 @@
 <section id="proyectos" class="proyectos section vh-100">
   <div class="d-flex justify-content-center">
     <h2 class="h2 titulo-section">Mis Proyectos</h2>
-    <button class="button-plus"><fa-icon [icon]="faCirclePlus"></fa-icon></button>
+    <button *ngIf="isLogged" class="button-plus"><fa-icon [icon]="faCirclePlus"></fa-icon></button>
   </div>
   <div class="proyectos-cards-container">
     <swiper class="project_cards my-swiper my_swiper" [config]="config"
@@ -9,8 +9,8 @@
         <ng-template swiperSlide class="swiper_slide swiper-slide">
             <div class="proyecto-card">
               <div class="crud">
-                <button><fa-icon [icon]="faTrashCan"></fa-icon></button>
-                <button><fa-icon [icon]="faPenToSquare"></fa-icon></button>
+                <button *ngIf="isLogged"><fa-icon [icon]="faTrashCan"></fa-icon></button>
+                <button *ngIf="isLogged"><fa-icon [icon]="faPenToSquare"></fa-icon></button>
               </div>
                 <div class="proyecto-header" id="proyecto-header">
                     <img src="./assets/PortfolioAP.jpg" alt="Imagen del proyecto">
@@ -32,8 +32,8 @@
         <ng-template swiperSlide class="swiper_slide swiper-slide">
             <div class="proyecto-card">
               <div class="crud">
-                <button><fa-icon [icon]="faTrashCan"></fa-icon></button>
-                <button><fa-icon [icon]="faPenToSquare"></fa-icon></button>
+                <button *ngIf="isLogged"><fa-icon [icon]="faTrashCan"></fa-icon></button>
+                <button *ngIf="isLogged"><fa-icon [icon]="faPenToSquare"></fa-icon></button>
               </div>
                 <div class="proyecto-header" id="proyecto-header">
                     <img src="./assets/Calculadora.jpg" alt="Imagen del proyecto">
@@ -54,8 +54,8 @@
         <ng-template swiperSlide class="swiper_slide swiper-slide">
             <div class="proyecto-card">
               <div class="crud">
-                <button><fa-icon [icon]="faTrashCan"></fa-icon></button>
-                <button><fa-icon [icon]="faPenToSquare"></fa-icon></button>
+                <button *ngIf="isLogged"><fa-icon [icon]="faTrashCan"></fa-icon></button>
+                <button *ngIf="isLogged"><fa-icon [icon]="faPenToSquare"></fa-icon></button>
               </div>
                 <div class="proyecto-header" id="proyecto-header">
                     <img src="./assets/Calendario.jpg" alt="Imagen del proyecto">
@@ -76,8 +76,8 @@
         <ng-template swiperSlide class="swiper_slide swiper-slide">
             <div class="proyecto-card">
               <div class="crud">
-                <button><fa-icon [icon]="faTrashCan"></fa-icon></button>
-                <button><fa-icon [icon]="faPenToSquare"></fa-icon></button>
+                <button *ngIf="isLogged"><fa-icon [icon]="faTrashCan"></fa-icon></button>
+                <button *ngIf="isLogged"><fa-icon [icon]="faPenToSquare"></fa-icon></button>
               </div>
                 <div class="proyecto-header" id="proyecto-header">
                     <img src="./assets/Pokedex.jpg" alt="Imagen del proyecto">
@@ -98,8 +98,8 @@
         <ng-template swiperSlide class="swiper_slide swiper-slide">
             <div class="proyecto-card">
               <div class="crud">
-                <button><fa-icon [icon]="faTrashCan"></fa-icon></button>
-                <button><fa-icon [icon]="faPenToSquare"></fa-icon></button>
+                <button *ngIf="isLogged"><fa-icon [icon]="faTrashCan"></fa-icon></button>
+                <button *ngIf="isLogged"><fa-icon [icon]="faPenToSquare"></fa-icon></button>
               </div>
                 <div class="proyecto-header" id="proyecto-header">
                     <img src="./assets/TaTeTi.jpg" alt="Imagen del proyecto">
@@ -120,8 +120,8 @@
         <ng-template swiperSlide class="swiper_slide swiper-slide">
             <div class="proyecto-card">
               <div class="crud">
-                <button><fa-icon [icon]="faTrashCan"></fa-icon></button>
-                <button><fa-icon [icon]="faPenToSquare"></fa-icon></button>
+                <button *ngIf="isLogged"><fa-icon [icon]="faTrashCan"></fa-icon></button>
+                <button *ngIf="isLogged"><fa-icon [icon]="faPenToSquare"></fa-icon></button>
               </div>
                 <div class="proyecto-header" id="proyecto-header">
                     <img src="./assets/MathQuiz.jpg" alt="Imagen del proyecto">

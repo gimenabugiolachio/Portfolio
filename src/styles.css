@@ -13,6 +13,7 @@ html {
 .bodyPers {
   background: #232323;
   color: #f3f3f3;
+
 }
 
 /*Buttons*/
@@ -76,6 +77,4 @@ html {
 
 .titulo-section {
   text-align: center;
-  font-size: 3vw;
-  margin-bottom: 1em;
 }

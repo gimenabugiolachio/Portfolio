@@ -18,6 +18,6 @@ export class FormacionComponent implements OnInit {
   faCirclePlus = faCirclePlus;
 
   constructor() {}
-
+  isLogged = false;
   ngOnInit(): void {}
 }
