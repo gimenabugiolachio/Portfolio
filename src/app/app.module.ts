@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { SwiperModule } from 'swiper/angular';
-
+import { HttpClientModule} from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { InicioComponent } from './Portfolio/inicio/inicio.component';
@@ -15,7 +15,7 @@ import { SkillsComponent } from './Portfolio/skills/skills.component';
 import { ProyectosComponent } from './Portfolio/proyectos/proyectos.component';
 import { ContactoComponent } from './Portfolio/contacto/contacto.component';
 import { FooterComponent } from './Portfolio/footer/footer.component';
-import { AnimacionComponent } from './Portfolio/animacion/animacion.component';
+import { IniciarSesionComponent } from './Portfolio/iniciar-sesion/iniciar-sesion.component';
 
 
 @NgModule({
@@ -30,7 +30,7 @@ import { AnimacionComponent } from './Portfolio/animacion/animacion.component';
     ProyectosComponent,
     ContactoComponent,
     FooterComponent,
-    AnimacionComponent,
+    IniciarSesionComponent,
 
   ],
   imports: [
@@ -38,7 +38,8 @@ import { AnimacionComponent } from './Portfolio/animacion/animacion.component';
     AppRoutingModule,
     FontAwesomeModule,
     NgbModule,
-    SwiperModule
+    SwiperModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

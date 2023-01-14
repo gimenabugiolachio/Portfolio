@@ -1,7 +1,7 @@
 <section id="formacion" class="formacion section vh-100">
   <div class="d-flex justify-content-center">
     <h2 class="h2 titulo-section">Formación</h2>
-    <button class="button-plus"><fa-icon [icon]="faCirclePlus"></fa-icon></button>
+    <button *ngIf="isLogged" class="button-plus"><fa-icon [icon]="faCirclePlus"></fa-icon></button>
   </div>
   <div class="cards-container">
     <ul class="educacion-cards">
@@ -18,10 +18,10 @@
             <span class="fechas">12/2022 a actualidad</span>
         </div>
         <div class="buttons">
-            <button routerLink="" >
+            <button *ngIf="isLogged" routerLink="" >
                 <fa-icon [icon]="faPenToSquare" class="icon"></fa-icon>
             </button>
-            <button>
+            <button *ngIf="isLogged">
                 <fa-icon [icon]="faTrashCan" class="icon"></fa-icon>
             </button>
         </div>
@@ -40,10 +40,10 @@
 
             </div>
             <div class="buttons">
-                <button routerLink="" >
+                <button *ngIf="isLogged" routerLink="" >
                     <fa-icon [icon]="faPenToSquare" class="icon"></fa-icon>
                 </button>
-                <button>
+                <button *ngIf="isLogged">
                     <fa-icon [icon]="faTrashCan" class="icon"></fa-icon>
                 </button>
             </div>
@@ -53,7 +53,7 @@
               <img src="./assets/blue.jpg" alt="Imagen de Institucion">
           </div>
           <div class="educacion-card-content">
-              <h3 class="h3" id="nombre">DataBrotes - DataSchool</h3>
+              <h3 class="h3" id="nombre">DataSchool</h3>
               <div class="d-flex">
                 <p class="text">Data Analytics Tableau</p>
                 <a target="_blank" class="certi" href="https://jamus.co.uk/demos/rwd-demonstrations/"><fa-icon [icon]="faFile" class="doc"></fa-icon></a>
@@ -61,10 +61,10 @@
               <span class="fechas">10/2022 al 12/2022</span>
           </div>
           <div class="buttons">
-              <button routerLink="" >
+              <button *ngIf="isLogged" routerLink="" >
                   <fa-icon [icon]="faPenToSquare" class="icon"></fa-icon>
               </button>
-              <button>
+              <button *ngIf="isLogged">
                   <fa-icon [icon]="faTrashCan" class="icon"></fa-icon>
               </button>
           </div>
@@ -83,10 +83,10 @@
 
         </div>
         <div class="buttons">
-            <button routerLink="" >
+            <button *ngIf="isLogged" routerLink="" >
                 <fa-icon [icon]="faPenToSquare" class="icon"></fa-icon>
             </button>
-            <button>
+            <button *ngIf="isLogged">
                 <fa-icon [icon]="faTrashCan" class="icon"></fa-icon>
             </button>
         </div>
@@ -96,7 +96,7 @@
           <img src="./assets/unpaz-logo.jpg" alt="Imagen de Institucion">
       </div>
       <div class="educacion-card-content">
-          <h3 class="h3" id="nombre">Univertidad Nacional de José C. Paz</h3>
+          <h3 class="h3" id="nombre">UNPAZ</h3>
           <div class="d-flex">
             <p class="text">Licenciatura en Tecnologías de la Información</p>
             <a target="_blank" class="certi" href="https://jamus.co.uk/demos/rwd-demonstrations/"><fa-icon [icon]="faFile" class="doc"></fa-icon></a>
@@ -104,10 +104,10 @@
           <span class="fechas">03/2020 a actualidad</span>
       </div>
       <div class="buttons">
-          <button routerLink="" >
+          <button *ngIf="isLogged" routerLink="" >
               <fa-icon [icon]="faPenToSquare" class="icon"></fa-icon>
           </button>
-          <button>
+          <button *ngIf="isLogged">
               <fa-icon [icon]="faTrashCan" class="icon"></fa-icon>
           </button>
       </div>

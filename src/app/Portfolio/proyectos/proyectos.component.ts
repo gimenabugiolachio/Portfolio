@@ -57,7 +57,7 @@ export class ProyectosComponent implements OnInit {
 
 
   constructor() { }
-
+  isLogged = false;
   ngOnInit(): void {
   }
 
