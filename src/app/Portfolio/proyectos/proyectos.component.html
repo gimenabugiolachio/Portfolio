@@ -1,9 +1,9 @@
 <section id="proyectos" class="proyectos section vh-100">
-  <div class="d-flex justify-content-center">
+  <div data-aos="zoom-in-up" class="d-flex justify-content-center">
     <h2 class="h2 titulo-section">Mis Proyectos</h2>
     <button *ngIf="isLogged" class="button-plus"><fa-icon [icon]="faCirclePlus"></fa-icon></button>
   </div>
-  <div class="proyectos-cards-container">
+  <div data-aos="fade-up-left" class="proyectos-cards-container">
     <swiper class="project_cards my-swiper my_swiper" [config]="config"
         style="--swiper-navigation-color: #D9A0BB;--swiper-pagination-color: #D9A0BB">
         <ng-template swiperSlide class="swiper_slide swiper-slide">
