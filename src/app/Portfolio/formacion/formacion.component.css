@@ -18,10 +18,8 @@ ul{
   height: 115px;
   list-style: none;
   list-style-type: none;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
-  background-color: rgba(0, 0, 0, 0.3);
-  border-right: 1px solid rgba(255, 255, 255, 0.5);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0 10px 20px #00000080;
+  background-color: rgba(255, 255, 255, .15);
   margin: 1em 0;
   transition: all .3s;
 }
@@ -39,13 +37,11 @@ ul{
 }
 
 .educacion-card-content {
-  padding: .7em;
+  padding: .9em;
   width: 100%;
 }
 
 .educacion-card-content h3 {
-  margin-top: .9em;
-  margin-bottom: .9em;
   font-size: .9em;
 }
 
@@ -79,15 +75,15 @@ ul{
 }
 
 .certi{
-  position: relative;
-  top: -.4em;
-  left: 1em;
-}
-
-.doc{
+  text-decoration: none;
   color: #f3f3f3;
+  background-color: #313131;
+  padding: .1em .2em;
+  border-radius: .2em;
+  text-align: center;
+  font-size: small;
 }
 
-.doc:hover{
-  color: #D9A0BB;
+.certi:hover{
+  background-color: #5A4F73;
 }

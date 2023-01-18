@@ -15,7 +15,8 @@
 .contacto-card {
   position: relative;
   top: -2em;
-  background-color: #313131;
+  background-color: rgba(255, 255, 255, .15);
+  box-shadow: 0 10px 20px #00000080;
   padding: .4em;
   border-radius: .5em;
   text-align: center;
@@ -41,6 +42,7 @@
 }
 
 .contacto-button {
+  text-decoration: none;
   color: #D49BB0;
   font-size: 1em;
   display: flex;

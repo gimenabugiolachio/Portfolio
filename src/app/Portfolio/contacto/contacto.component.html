@@ -4,39 +4,39 @@
   </div>
   <div class="contacto-container">
     <div class="contacto-info">
-      <div data-aos="fade-down-right" class="contacto-card">
+      <div data-aos="fade-down-right" data-aos-delay="100" class="contacto-card">
         <fa-icon [icon]="mail" class="icono-card"></fa-icon>
         <h3 class="h3 titulo">Email</h3>
         <span class="subtitulo">gimena.bugiolachio@gmail.com</span>
-        <span class="contacto-button">Escribime<fa-icon [icon]="send" class="contacto-button-icon"></fa-icon></span>
+        <a href="mailto:gimena.bugiolachio@gmail.com" target="_blank" class="contacto-button">Escribime<fa-icon [icon]="send" class="contacto-button-icon"></fa-icon></a>
       </div>
-      <div data-aos="fade-up-left" class="contacto-card">
+      <div data-aos="fade-up-left" data-aos-delay="200" class="contacto-card">
         <fa-icon [icon]="wpp" class="icono-card"></fa-icon>
         <h3 class="h3 titulo">Whatsapp</h3>
         <span class="subtitulo">11 2390-0493</span>
-        <span class="contacto-button">Escribime<fa-icon [icon]="send" class="contacto-button-icon"></fa-icon></span>
+        <a href="https://wa.me/1123900493" target="_blank" class="contacto-button">Escribime<fa-icon [icon]="send" class="contacto-button-icon"></fa-icon></a>
       </div>
     </div>
 
     <div data-aos="zoom-in" class="contacto-contenido">
       <form action="" class="contacto-form">
-          <div class="input-container">
+          <div data-aos="fade-down-left" data-aos-delay="100" class="input-container">
             <input type="text" class="input" >
             <span>Nombre</span>
           </div>
-          <div class="input-container">
+          <div data-aos="fade-down-left" data-aos-delay="200" class="input-container">
             <input type="tel" class="input" >
             <span>Teléfono</span>
           </div>
-        <div class="input-container">
+        <div data-aos="fade-down-left" data-aos-delay="300" class="input-container">
           <input type="email" class="input" >
           <span>Email</span>
         </div>
-        <div class="input-container textarea">
+        <div data-aos="fade-down-left" data-aos-delay="400" class="input-container textarea">
           <textarea name="" id="" cols="25" rows="5" class="input"></textarea>
           <span>Mensaje</span>
         </div>
-        <button type="submit" class="button">
+        <button data-aos="fade-down-left" data-aos-delay="500" type="submit" class="button">
           Enviar<fa-icon [icon]="paper"></fa-icon>
         </button>
       </form>
