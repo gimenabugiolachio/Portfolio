@@ -3,24 +3,13 @@ a {
   color: #f3f3f3;
 }
 
-.acerca-container {
-  position: relative;
-  padding: 0 3em;
-  top: 2em;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  column-gap: 3em;
-  align-items: center;
-  justify-items: center;
-}
-
-.acerca-container img {
-  width: 20em;
-  border-radius: 50%;
-  justify-self: center;
+.sobre-container{
+  padding: 2em 3em;
 }
 
 .acerca-img{
+  width: 20em;
+  border-radius: 50%;
   border: 4px solid #f3f3f3;
   box-shadow: 0 10px 20px #00000080;
 }
@@ -35,48 +24,9 @@ a {
   overflow: hidden;
 }
 
-@keyframes typing {
-  from {
-    width: 0
-  }
-}
-
-@keyframes blink {
-  50% {
-    border-color: transparent
-  }
-}
-
 .acerca-descripcion {
   text-align: justify;
   margin-bottom: 1.5em;
-}
-
-.acerca-info {
-  justify-content: center;
-  display: flex;
-  column-gap: 2em;
-  margin-bottom: 3em;
-}
-
-.acerca-box {
-  text-align: center;
-  border-radius: 1em;
-  width: 150px;
-  background-color: #313131;
-  box-shadow: 0 10px 20px #00000080;
-}
-
-.acerca-box:hover {
-  border: 1px solid #D49BB0;
-}
-
-.acerca-encabezado {
-  font-size: 1.1vw;
-}
-
-.acerca-subtitulo {
-  font-size: .9vw;
 }
 
 .card{
@@ -99,6 +49,3 @@ a {
   letter-spacing: 1px;
 }
 
-.anim{
-  text-align: center;
-}
