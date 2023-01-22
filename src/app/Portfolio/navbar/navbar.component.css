@@ -17,6 +17,7 @@
 .nav-item {
   position: relative;
   margin-left: 1.5em;
+  font-size: calc(.6em + .5vw);
   text-align: center;
 }
 
@@ -33,7 +34,7 @@
 }
 
 img{
-  width: 5em;
+  width: 10em;
 }
 
 .nav-item:hover::after {

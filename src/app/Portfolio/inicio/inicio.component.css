@@ -23,11 +23,11 @@ a{
 }
 
 .inicio-titulo{
-  font-size: 2vw;
+  font-size: calc(1em + 1vw);
 }
 
 .inicio-subtitulo{
-  font-size: 1.5vw;
+  font-size: calc(.6em + .8vw);
   font-weight: 300;
   margin-bottom: .75em;
 }
@@ -37,6 +37,7 @@ a{
   top: 7em;
   left: 0;
   display: flex;
+  justify-content: center;
   align-items: center;
 }
 
@@ -51,12 +52,8 @@ a{
   font-size: 1.1em;
 }
 
-.inicio-data a{
-  text-decoration: none;
-}
-
-.button-icon{
-  font-size: 1.2vw;
+.mas-info{
+  font-size: calc(.6em + .5vw);
 }
 
 .icon {
@@ -105,37 +102,12 @@ a{
   outline-color: #0072b1;
 }
 
-.mi-info{
-  column-gap: 1em;
-  position: absolute;
-  left: .5em;
-  bottom: 1em;
-  background-attachment: fixed;
-}
-
 .inicio-data{
   position: relative;
   top: 12em;
 }
 
-.card{
-  background-color: rgba(255, 255, 255, .15);
-  backdrop-filter: blur(5px);
-  text-align: center;
-  box-shadow: 0 10px 20px #00000080;
-}
-
-.info-titulo,
-.info-subtitulo{
-  font-size: .87em;
-}
-
-.info-titulo{
-    font-weight: bold;
-    letter-spacing: 1px;
-}
-
-.info-icon{
-  font-size: 1.7em;
-  color: #D49BB0;
+.botton-container{
+  position: relative;
+  top: 15em;
 }
