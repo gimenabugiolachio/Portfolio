@@ -23,11 +23,11 @@ a{
 }
 
 .inicio-titulo{
-  font-size: 1em;
+  font-size: calc(1em + 1vw);
 }
 
 .inicio-subtitulo{
-  font-size: .8em;
+  font-size: calc(.6em + .8vw);
   font-weight: 300;
   margin-bottom: .75em;
 }
@@ -52,12 +52,8 @@ a{
   font-size: 1.1em;
 }
 
-.inicio-data a{
-  text-decoration: none;
-}
-
-.button-icon{
-  font-size: 1.1em;
+.mas-info{
+  font-size: calc(.6em + .5vw);
 }
 
 .icon {

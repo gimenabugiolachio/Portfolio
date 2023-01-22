@@ -7,6 +7,8 @@ import { faCirclePlus } from '@fortawesome/free-solid-svg-icons';
 import { faPenToSquare } from '@fortawesome/free-solid-svg-icons';
 
 
+
+
 @Component({
   selector: 'app-sobre',
   templateUrl: './sobre.component.html',
@@ -22,8 +24,12 @@ export class SobreComponent implements OnInit {
   faCirclePlus = faCirclePlus;
   faPenToSquare = faPenToSquare;
 
+
+
   constructor() {}
+
 
   isLogged = false;
   ngOnInit(): void {}
+
 }
