@@ -18,6 +18,7 @@ import { FooterComponent } from './Portfolio/footer/footer.component';
 import { IniciarSesionComponent } from './Portfolio/iniciar-sesion/iniciar-sesion.component';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,

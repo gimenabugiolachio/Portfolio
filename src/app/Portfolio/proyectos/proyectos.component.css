@@ -15,7 +15,7 @@
   padding-right: 2%;
   box-shadow: 0 10px 20px #00000080;
   padding-top: 0.62em;
-  background-color: rgba(48, 47, 47, 0.3);
+  background-color: #313131;
 }
 
 .my_swiper {
@@ -33,7 +33,6 @@
   text-align: center;
   -webkit-backdrop-filter: blur(1em);
   backdrop-filter: blur(1em);
-  background-color: #313131;
   transition: all .3s;
 }
 
@@ -63,7 +62,7 @@
 }
 
 .proyecto-contenido {
-  background-color: #313131;
+  background-color: hsla(0, 0%, 19%, 0.377);
   padding: 10px 6px;
 }
 

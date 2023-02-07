@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap');
 
+
 * {
   margin: 0;
   padding: 0;
@@ -11,13 +12,16 @@ html {
 }
 
 .bodyPers {
-  background: #232323;
   color: #f3f3f3;
-  overflow: hidden;
+  background-color: #232323;
+  background-image: url(./assets/4.svg);
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 /*Buttons*/
 .button {
+  font-size: calc(.6em + .5vw);
   display: inline-flex;
   align-items: center;
   column-gap: .5em;
@@ -54,7 +58,7 @@ html {
   background-color: transparent;
   border: none;
   color: #f3f3f3;
-  font-size: 1.5em;
+  font-size: calc(.6em + .5vw);
   position: relative;
   left: .8em;
   top: -.1em;
@@ -64,7 +68,7 @@ html {
   background-color: transparent;
   border: none;
   color: #f3f3f3;
-  font-size: 1.5em;
+  font-size: calc(.6em + .5vw);
   position: relative;
   top: -.1em;
   left: 1.2em;
@@ -73,8 +77,34 @@ html {
 /*Section*/
 .section {
   padding: 5em 0 2em;
+  /*background: #780206;
+  background: -webkit-linear-gradient(to right, #061161, #780206);
+  background: linear-gradient(to right, #012230, #300413);*/
+  overflow: hidden;
+  height: 100vh;
 }
 
 .titulo-section {
   text-align: center;
+  position: relative;
+}
+
+.titulo-section:before {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 100px;
+  bottom: -8px;
+  background: #11bebe;
+  background: -webkit-linear-gradient(to right, #A83279, #11bebe);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #A83279, #11bebe); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+
+@media only screen and (max-width: 400px){
+  .section{
+    padding: 2em 0 1em;
+    height: max-content;
+  }
+
 }
