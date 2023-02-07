@@ -3,7 +3,7 @@ import { faCalendarDays } from '@fortawesome/free-solid-svg-icons';
 import { faPenToSquare } from '@fortawesome/free-solid-svg-icons';
 import { faTrashCan } from '@fortawesome/free-solid-svg-icons';
 import { faCirclePlus } from '@fortawesome/free-solid-svg-icons';
-import { faFile } from '@fortawesome/free-solid-svg-icons';
+import { faCaretRight } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-formacion',
@@ -11,7 +11,7 @@ import { faFile } from '@fortawesome/free-solid-svg-icons';
   styleUrls: ['./formacion.component.css'],
 })
 export class FormacionComponent implements OnInit {
-  faFile = faFile;
+  faCaretRight = faCaretRight;
   faCalendarDays = faCalendarDays;
   faPenToSquare = faPenToSquare;
   faTrashCan = faTrashCan;

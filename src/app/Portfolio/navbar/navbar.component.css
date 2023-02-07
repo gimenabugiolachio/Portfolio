@@ -1,3 +1,5 @@
+
+
 .login{
   color: #f3f3f3;
   margin-left: 1em;
@@ -33,16 +35,18 @@
   transition: 0.4s ease;
 }
 
-img{
-  width: 10em;
-}
-
 .nav-item:hover::after {
   width: 100%;
 }
 
 .navbar li {
   list-style: none;
+}
+
+.logo a{
+  text-decoration: none;
+  color: #f3f3f3;
+  font-size: calc(.5em + .4vw);
 }
 
 .navbar li a {

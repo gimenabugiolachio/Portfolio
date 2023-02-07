@@ -2,6 +2,11 @@ ul{
   padding: 0;
 }
 
+.cards-container{
+  position: relative;
+  top: 2em;
+}
+
 .educacion-cards{
   display: grid;
   grid-template-columns:  repeat(2, 1fr);
@@ -19,7 +24,7 @@ ul{
   list-style: none;
   list-style-type: none;
   box-shadow: 0 10px 20px #00000080;
-  background-color: rgba(255, 255, 255, .15);
+  background-color: #313131;
   margin: 1em 0;
   transition: all .3s;
 }
@@ -42,7 +47,7 @@ ul{
 }
 
 .educacion-card-content h3 {
-  font-size: calc(.6em + .3vw)
+  font-size: calc(.6em + .3vw);
 }
 
 .text {
@@ -77,14 +82,26 @@ ul{
 
 .certi{
   text-decoration: none;
-  color: #f3f3f3;
-  background-color: #313131;
-  padding: .3em .4em;
-  border-radius: .2em;
-  text-align: center;
-  font-size: small;
+  color: #D49BB0;
+  font-size: calc(.5em + .4vw);
+  display: flex;
+  align-items: center;
+  column-gap: .25em;
+  cursor: pointer;
 }
 
-.certi:hover{
-  background-color: #5A4F73;
+.icon-form{
+  font-size: calc(.6em + .5vw);
+  transition: .3s;
+}
+
+.certi:hover .icon-form{
+  transform: translateX(.25em);
+}
+
+
+@media only screen and (max-width: 400px){
+  .educacion-cards{
+    margin-top: -2em;
+  }
 }

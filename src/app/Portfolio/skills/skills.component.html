@@ -1,93 +1,125 @@
-<section id="skills" class="skills section vh-100">
+<section id="skills" class="skills section">
   <div data-aos="zoom-in-up" class="d-flex justify-content-center">
     <h2 class="h2 titulo-section">Hard & Soft Skills</h2>
     <button *ngIf="isLogged" class="button-plus"><fa-icon [icon]="faCirclePlus"></fa-icon></button>
     <button *ngIf="isLogged" class="button-edit"><fa-icon [icon]="faPenToSquare"></fa-icon></button>
   </div>
-  <div class="skills-container">
-    <div class="hard-skills">
-      <div class="hard-container">
-        <div data-aos="fade-down" data-aos-delay="100" class="cards">
-            <a href="https://developer.mozilla.org/es/docs/Web/HTML" target="_blank">
-              <div class="card">
-                <fa-icon class="icon-hs" [icon]="html"></fa-icon>
-                <h3 class="titulo-hs">HTML</h3>
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="row hard-skills">
+          <div class="col-sm-3">
+            <div data-aos="fade-down" data-aos-delay="100" class="skill-box">
+              <div class="skill-ico">
+                <span class="ico-circle"><fa-icon [icon]="html"></fa-icon></span>
               </div>
-            </a>
-        </div>
-        <div data-aos="fade-down" data-aos-delay="200" class="cards">
-            <a href="https://developer.mozilla.org/es/docs/Web/CSS" target="_blank">
-              <div class="card">
-                <fa-icon class="icon-hs" [icon]="css"></fa-icon>
-                <h3 class="h3 titulo-hs">CSS</h3>
-              </div>
-            </a>
-        </div>
-        <div data-aos="fade-down" data-aos-delay="300" class="cards">
-            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
-              <div class="card">
-                <fa-icon class="icon-hs" [icon]="js"></fa-icon>
-                <h3 class="h3 titulo-hs">JAVASCRIPT</h3>
-              </div>
-            </a>
-        </div>
-        <div data-aos="fade-down" data-aos-delay="400" class="cards">
-            <a href="https://angular.io/" target="_blank">
-              <div class="card">
-                <fa-icon class="icon-hs" [icon]="angular"></fa-icon>
-                <h3 class="h3 titulo-hs">ANGULAR</h3>
-              </div>
-            </a>
-        </div>
-        <div data-aos="fade-down" data-aos-delay="500" class="cards">
-            <a href="https://getbootstrap.com/" target="_blank">
-              <div class="card">
-                <fa-icon class="icon-hs" [icon]="bootstrap"></fa-icon>
-                <h3 class="h3 titulo-hs">BOOTSTRAP</h3>
-              </div>
-            </a>
-        </div>
-        <div data-aos="fade-down" data-aos-delay="600" class="cards">
-            <a href="https://docs.oracle.com/en/java/" target="_blank">
-              <div class="card">
-                <fa-icon class="icon-hs" [icon]="java"></fa-icon>
-                <h3 class="h3 titulo-hs">JAVA</h3>
-              </div>
-            </a>
-        </div>
-        <div data-aos="fade-down" data-aos-delay="700" class="cards">
-          <a href="https://dev.mysql.com/doc/" target="_blank">
-            <div class="card">
-              <fa-icon class="icon-hs" [icon]="mysql"></fa-icon>
-              <h3 class="h3 titulo-hs">MySQL</h3>
             </div>
-          </a>
-        </div>
-        <div data-aos="fade-down" data-aos-delay="800" class="cards">
-            <a href="https://helpx.adobe.com/illustrator/user-guide.html" target="_blank">
-              <div class="card">
-                <fa-icon class="icon-hs" [icon]="diseno"></fa-icon>
-                <h3 class="h3 titulo-hs">ILLUSTRATOR</h3>
+          </div>
+          <div class="col-sm-3">
+            <div data-aos="fade-down" data-aos-delay="200" class="skill-box">
+              <div class="skill-ico">
+                <span class="ico-circle"><fa-icon [icon]="css"></fa-icon></span>
               </div>
-            </a>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div data-aos="fade-down" data-aos-delay="300" class="skill-box">
+              <div class="skill-ico">
+                <span class="ico-circle"><fa-icon [icon]="js"></fa-icon></span>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div data-aos="fade-down" data-aos-delay="400" class="skill-box">
+              <div class="skill-ico">
+                <span class="ico-circle"><fa-icon [icon]="angular"></fa-icon></span>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div data-aos="fade-down" data-aos-delay="500" class="skill-box">
+              <div class="skill-ico">
+                <span class="ico-circle"><fa-icon [icon]="bootstrap"></fa-icon></span>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div data-aos="fade-down" data-aos-delay="600" class="skill-box">
+              <div class="skill-ico">
+                <span class="ico-circle"><fa-icon [icon]="java"></fa-icon></span>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div data-aos="fade-down" data-aos-delay="700" class="skill-box">
+              <div class="skill-ico">
+                <span class="ico-circle"><fa-icon [icon]="mysql"></fa-icon></span>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div data-aos="fade-down" data-aos-delay="800" class="skill-box">
+              <div class="skill-ico">
+                <span class="ico-circle"><fa-icon [icon]="diseno"></fa-icon></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Hard Skills</h5>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="row soft-skills">
+          <div class="col-sm-4">
+            <div class="skill-box">
+              <div class="skill-ico">
+                <span class="ico-circle"><fa-icon [icon]="idea"></fa-icon></span>
+              </div>
+              <div class="skill-content">
+                <h2 class="skill-title">Creatividad</h2>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="skill-box">
+              <div class="skill-ico">
+                <span class="ico-circle"><fa-icon [icon]="resolucion"></fa-icon></span>
+              </div>
+              <div class="skill-content">
+                <h2 class="skill-title">Resolución de problemas</h2>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="skill-box">
+              <div class="skill-ico">
+                <span class="ico-circle"><fa-icon [icon]="equipo"></fa-icon></span>
+              </div>
+              <div class="skill-content">
+                <h2 class="skill-title">Trabajo en equipo</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Soft Skills</h5>
         </div>
       </div>
     </div>
-    <div class="soft-skills">
-      <div class="cards-container">
-        <div data-aos="zoom-in-down" data-aos-delay="100" class="card-ss">
-          <h4 class="h4">Creatividad</h4>
-          <fa-icon class="icon-ss" [icon]="idea"></fa-icon>
-        </div>
-        <div data-aos="zoom-in-down" data-aos-delay="200" class="card-ss">
-          <h4 class="h4">Resolución de problemas</h4>
-          <fa-icon class="icon-ss" [icon]="resolucion"></fa-icon>
-        </div>
-        <div data-aos="zoom-in-down" data-aos-delay="300" class="card-ss">
-          <h4 class="h4">Trabajo en equipo</h4>
-          <fa-icon class="icon-ss" [icon]="equipo"></fa-icon>
-        </div>
-      </div>
-    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
   </div>
 </section>
