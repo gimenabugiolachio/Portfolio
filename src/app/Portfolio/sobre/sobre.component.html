@@ -1,34 +1,28 @@
-  <section id="sobreMi" class="acerca section">
-    <div data-aos="zoom-in-up" class="d-flex justify-content-center">
-      <h2 class="h2 titulo-section">Sobre Mi</h2>
-      <button *ngIf="isLogged" class="button-edit"><fa-icon [icon]="faPenToSquare"></fa-icon></button>
+<section id="sobreMi" class="acerca section">
+  <div data-aos="zoom-in-up" class="d-flex justify-content-center">
+    <h2 class="h2 titulo-section">Sobre Mi</h2>
+    <button *ngIf="isLogged" class="button-edit"><fa-icon [icon]="faPenToSquare"></fa-icon></button>
+  </div>
+  <div class="row sobre-container">
+    <div data-aos="fade-down-right" data-aos-delay="200" class="col-xs-12 col-sm-6 col-lg-6 col-md-6 imagen">
+      <img src="./assets/Medio cuerpo.png" alt="Imagen de Perfil de Gimena" class="img-fluid acerca-img">
     </div>
-    <div class="row sobre-container">
-      <div data-aos="fade-down-right" class="col-xs-12 col-sm-6 col-lg-6 col-md-6 imagen">
-        <img src="./assets/gimenaBugiolachio.jpg" alt="Imagen de Perfil de Gimena" class="img-fluid acerca-img">
+    <div data-aos="fade-up-left" data-aos-delay="300" class="acerca-data col-xs-12 col-sm-6 col-lg-6 col-md-6">
+      <div class="card">
+        <p class="acerca-descripcion">¡Hola! Soy estudiante de Tecnologías de la Información con experiencia
+          en Desarrollo Full Stack, Java y Data Analytics. Estoy emocionada de comenzar mi carrera
+          profesional en el campo de la tecnología y estoy comprometida a desarrollar mis habilidades y conocimientos
+          para estar preparada para cualquier desafío que se presente. Me considero una persona proactiva y
+          autodidacta que disfruta trabajando en equipo y aprendiendo de los demás. ¡Estoy segura de que puedo
+          aportar valor al equipo que me acepte!
+        </p>
       </div>
-      <div data-aos="fade-up-left" class="acerca-data col-xs-12 col-sm-6 col-lg-6 col-md-6">
-        <div class="card">
-          <p class="acerca-descripcion"> Te voy a contar un poco sobre mi para que puedas conocerme.
-            Arranqué con curiosidad por la programación allá por el 2012, con un curso de Visual Basic y hoy soy
-            desarrolladora Full Stack.
-            <br>
-            Me apasiona y desafía aprender cosas nuevas. El mundo de la programación es muy amplio y constantemente surgen
-            nuevas tecnologías, nuevas versiones o nuevas herramientas. Este constante cambio hace que siempre tenga ganas
-            de superarme.
-            <br>
-            No lo sé todo, pero te puedo asegurar que voy a ser insistente. Voy a investigar, preguntar y no voy a parar
-            hasta aprender lo que necesito.
-          </p>
-        </div>
-        <div class="buttons-acerca">
-          <a data-aos="fade-down-left" data-aos-delay="100" href="#contacto" class="button">
-            <fa-icon [icon]="faPaperPlane"></fa-icon>Contactame
-          </a>
-          <a data-aos="fade-down-left" data-aos-delay="200" href="./assets/Gimena Bugiolachio .pdf" download class="button">
-            <fa-icon [icon]="faFileLines"></fa-icon>Desacargar CV
-          </a>
-        </div>
+      <div class="buttons-acerca">
+        <a data-aos="fade-down-left" data-aos-delay="500" href="./assets/Gimena Bugiolachio .pdf" download
+          class="button">
+          <fa-icon [icon]="faFileLines"></fa-icon>Desacargar CV
+        </a>
       </div>
     </div>
-  </section>
+  </div>
+</section>

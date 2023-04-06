@@ -23,8 +23,13 @@ ul{
   height: 115px;
   list-style: none;
   list-style-type: none;
-  box-shadow: 0 10px 20px #00000080;
-  background-color: #313131;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5) ;
   margin: 1em 0;
   transition: all .3s;
 }

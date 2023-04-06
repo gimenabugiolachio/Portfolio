@@ -5,19 +5,20 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-html {
-  font-family: 'Cairo', sans-serif;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
 }
 
 .bodyPers {
   color: #f3f3f3;
-  background-color: #232323;
-  background-image: url(./assets/4.svg);
-  background-attachment: fixed;
+  background-color: #211835;
   background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  font-family: 'Cairo', sans-serif;
 }
+
 
 /*Buttons*/
 .button {
@@ -54,34 +55,11 @@ html {
   background-color: #5A4F73;
 }
 
-.button-plus {
-  background-color: transparent;
-  border: none;
-  color: #f3f3f3;
-  font-size: calc(.6em + .5vw);
-  position: relative;
-  left: .8em;
-  top: -.1em;
-}
-
-.button-edit {
-  background-color: transparent;
-  border: none;
-  color: #f3f3f3;
-  font-size: calc(.6em + .5vw);
-  position: relative;
-  top: -.1em;
-  left: 1.2em;
-}
-
 /*Section*/
 .section {
   padding: 5em 0 2em;
-  /*background: #780206;
-  background: -webkit-linear-gradient(to right, #061161, #780206);
-  background: linear-gradient(to right, #012230, #300413);*/
+  min-height: 100vh;
   overflow: hidden;
-  height: 100vh;
 }
 
 .titulo-section {
