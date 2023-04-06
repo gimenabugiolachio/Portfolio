@@ -35,7 +35,9 @@ ul{
 }
 
 .educacion-card:hover {
-  border: 1px solid #D9A0BB;
+  transition: all 500ms ease;
+  background-color: #5A4F73;
+  box-shadow: 0 0 0  1px #a091c4
 }
 
 .educacion-card-img {

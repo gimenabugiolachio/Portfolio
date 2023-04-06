@@ -26,7 +26,7 @@ styles: [`
 })
 export class InicioComponent implements OnInit {
   text = '';
-  words = ['Desarrolladora', 'Diseñadora', 'Creadora'];
+  words = ['{Desarrolladora}', '{Full Stack}',];
   wordIndex = 0;
   delay = 150;
   isDeleting = false;

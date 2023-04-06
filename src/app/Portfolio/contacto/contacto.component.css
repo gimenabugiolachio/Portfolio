@@ -1,3 +1,4 @@
+
 .contacto-container {
   display: flex;
   flex-direction: row;
@@ -88,8 +89,8 @@
   position: absolute;
   top: 0;
   left: 25px;
-  color: #232323;
-
+  color: #f3f3f3;
+  background-color: #211835;
   border-radius: 3%;
   font-size: calc(.5em + .4vw);
   padding: 0 .4em;
