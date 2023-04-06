@@ -1,19 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap');
 
-
-.login{
-  color: #f3f3f3;
-  margin-left: 1em;
+.navbar{
+  border-bottom: 0.5px solid #f3f3f34d;
 }
+
+.nav-logo{
+  color: #f3f3f3;
+  font-family: 'DM Sans', sans-serif;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #C18DBF;
+  text-align: center;
+  margin: auto;
+}
+
 
 .login:hover{
   color: #C18DBF;
-}
-
-.ingresar{
-  background-color: #C18DBF;
-  color: #f3f3f3;
-  border: none;
-  transition: .2s;
 }
 
 .nav-item {
@@ -23,7 +27,7 @@
   text-align: center;
 }
 
-.nav-item::after {
+.nav-item::before {
   content: '';
   position: absolute;
   left: 0;
@@ -31,11 +35,13 @@
   height: 2px;
   width: 0;
   border-radius: 2px;
-  background-color: #D49BB0;
+  background: #11bebe;
+  background: -webkit-linear-gradient(to right, #A83279, #11bebe);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #A83279, #11bebe); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   transition: 0.4s ease;
 }
 
-.nav-item:hover::after {
+.nav-item:hover::before {
   width: 100%;
 }
 
@@ -63,16 +69,6 @@
   transform: translateY(7px);
 }
 
-.nav-toggle-icon{
-  width: auto;
-  height: auto;
-}
-
-fa-icon{
-  color: #f3f3f3;
-  border: none;
-  background-color: transparent;
-}
 
 @media screen and (max-width: 992px){
   .nav-item:hover::after {

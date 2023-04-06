@@ -16,8 +16,13 @@
 .contacto-card {
   position: relative;
   top: -2em;
-  background-color:#313131;
-  box-shadow: 0 10px 20px #00000080;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5) ;
   padding: .4em;
   border-radius: .5em;
   text-align: center;
@@ -70,7 +75,7 @@
 .input {
   width: 20vw;
   border: 2px solid #f3f3f3;
-  background-color: #232323;
+  background-color: transparent;
   padding: .4em .8em;
   color: #f3f3f3;
   border-radius: .5em;
@@ -83,8 +88,9 @@
   position: absolute;
   top: 0;
   left: 25px;
-  color: #f3f3f3;
-  background-color: #232323;
+  color: #232323;
+
+  border-radius: 3%;
   font-size: calc(.5em + .4vw);
   padding: 0 .4em;
   pointer-events: none;
