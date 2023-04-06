@@ -1,28 +1,23 @@
 <section id="proyectos" class="proyectos section">
   <div data-aos="zoom-in-up" class="d-flex justify-content-center">
     <h2 class="h2 titulo-section">Mis Proyectos</h2>
-    <button *ngIf="isLogged" class="button-plus"><fa-icon [icon]="faCirclePlus"></fa-icon></button>
   </div>
   <div data-aos="fade-up-left" class="proyectos-cards-container">
     <swiper class="project_cards my-swiper my_swiper" [config]="config"
         style="--swiper-navigation-color: #f3f3f3;--swiper-pagination-color: #D9A0BB">
         <ng-template swiperSlide class="swiper_slide swiper-slide">
             <div class="proyecto-card">
-              <div class="crud">
-                <button *ngIf="isLogged"><fa-icon [icon]="faTrashCan"></fa-icon></button>
-                <button *ngIf="isLogged"><fa-icon [icon]="faPenToSquare"></fa-icon></button>
-              </div>
                 <div class="proyecto-header" id="proyecto-header">
                     <img src="./assets/PortfolioAP.jpg" alt="Imagen del proyecto">
                 </div>
                 <div class="proyecto-contenido">
                     <h3 class="nombre" id="nombre">Portfolio Full Stack</h3>
-                    <div class="buttons-vista d-flex">
+                    <div class="buttons-vista">
                       <button>
-                        <fa-icon class="butt-vista" [icon]="faGithub"></fa-icon>
+                        <fa-icon class="button" [icon]="faGithub"></fa-icon>
                       </button>
                       <button>
-                        <fa-icon class="butt-vista" [icon]="faDesktop"></fa-icon>
+                        <fa-icon class="button" [icon]="faDesktop"></fa-icon>
                       </button>
                     </div>
                 </div>
@@ -31,21 +26,17 @@
         </ng-template>
         <ng-template swiperSlide class="swiper_slide swiper-slide">
             <div class="proyecto-card">
-              <div class="crud">
-                <button *ngIf="isLogged"><fa-icon [icon]="faTrashCan"></fa-icon></button>
-                <button *ngIf="isLogged"><fa-icon [icon]="faPenToSquare"></fa-icon></button>
-              </div>
                 <div class="proyecto-header" id="proyecto-header">
                     <img src="./assets/Calculadora.jpg" alt="Imagen del proyecto">
                 </div>
                 <div class="proyecto-contenido">
                     <h3 class="nombre" id="nombre">Calculadora</h3>
-                    <div class="buttons-vista d-flex">
+                    <div class="buttons-vista">
                       <button>
-                        <fa-icon class="butt-vista" [icon]="faGithub"></fa-icon>
+                        <fa-icon class="button" [icon]="faGithub"></fa-icon>
                       </button>
                       <button>
-                        <fa-icon class="butt-vista" [icon]="faDesktop"></fa-icon>
+                        <fa-icon class="button" [icon]="faDesktop"></fa-icon>
                       </button>
                     </div>
                 </div>
@@ -53,21 +44,17 @@
         </ng-template>
         <ng-template swiperSlide class="swiper_slide swiper-slide">
             <div class="proyecto-card">
-              <div class="crud">
-                <button *ngIf="isLogged"><fa-icon [icon]="faTrashCan"></fa-icon></button>
-                <button *ngIf="isLogged"><fa-icon [icon]="faPenToSquare"></fa-icon></button>
-              </div>
                 <div class="proyecto-header" id="proyecto-header">
                     <img src="./assets/Calendario.jpg" alt="Imagen del proyecto">
                 </div>
                 <div class="proyecto-contenido">
                     <h3 class="nombre" id="nombre">Calendario</h3>
-                    <div class="buttons-vista d-flex">
+                    <div class="buttons-vista">
                       <button>
-                        <fa-icon class="butt-vista" [icon]="faGithub"></fa-icon>
+                        <fa-icon class="button" [icon]="faGithub"></fa-icon>
                       </button>
                       <button>
-                        <fa-icon class="butt-vista" [icon]="faDesktop"></fa-icon>
+                        <fa-icon class="button" [icon]="faDesktop"></fa-icon>
                       </button>
                     </div>
                 </div>
@@ -75,21 +62,17 @@
         </ng-template>
         <ng-template swiperSlide class="swiper_slide swiper-slide">
             <div class="proyecto-card">
-              <div class="crud">
-                <button *ngIf="isLogged"><fa-icon [icon]="faTrashCan"></fa-icon></button>
-                <button *ngIf="isLogged"><fa-icon [icon]="faPenToSquare"></fa-icon></button>
-              </div>
                 <div class="proyecto-header" id="proyecto-header">
                     <img src="./assets/Pokedex.jpg" alt="Imagen del proyecto">
                 </div>
                 <div class="proyecto-contenido">
                     <h3 class="nombre" id="nombre">Pokédex</h3>
-                    <div class="buttons-vista d-flex">
+                    <div class="buttons-vista">
                       <button>
-                        <fa-icon class="butt-vista" [icon]="faGithub"></fa-icon>
+                        <fa-icon class="button" [icon]="faGithub"></fa-icon>
                       </button>
                       <button>
-                        <fa-icon class="butt-vista" [icon]="faDesktop"></fa-icon>
+                        <fa-icon class="button" [icon]="faDesktop"></fa-icon>
                       </button>
                     </div>
                 </div>
@@ -97,21 +80,17 @@
         </ng-template>
         <ng-template swiperSlide class="swiper_slide swiper-slide">
             <div class="proyecto-card">
-              <div class="crud">
-                <button *ngIf="isLogged"><fa-icon [icon]="faTrashCan"></fa-icon></button>
-                <button *ngIf="isLogged"><fa-icon [icon]="faPenToSquare"></fa-icon></button>
-              </div>
-                <div class="proyecto-header" id="proyecto-header">
-                    <img src="./assets/TaTeTi.jpg" alt="Imagen del proyecto">
-                </div>
+              <div class="proyecto-header" id="proyecto-header">
+                <img src="./assets/TaTeTi.jpg" alt="Imagen del proyecto">
+            </div>
                 <div class="proyecto-contenido">
                     <h3 class="nombre" id="nombre">Ta-Te-Ti</h3>
-                    <div class="buttons-vista d-flex">
+                    <div class="buttons-vista">
                       <button>
-                        <fa-icon class="butt-vista" [icon]="faGithub"></fa-icon>
+                        <fa-icon class="button" [icon]="faGithub"></fa-icon>
                       </button>
                       <button>
-                        <fa-icon class="butt-vista" [icon]="faDesktop"></fa-icon>
+                        <fa-icon class="button" [icon]="faDesktop"></fa-icon>
                       </button>
                     </div>
                 </div>
@@ -119,21 +98,17 @@
         </ng-template>
         <ng-template swiperSlide class="swiper_slide swiper-slide">
             <div class="proyecto-card">
-              <div class="crud">
-                <button *ngIf="isLogged"><fa-icon [icon]="faTrashCan"></fa-icon></button>
-                <button *ngIf="isLogged"><fa-icon [icon]="faPenToSquare"></fa-icon></button>
-              </div>
                 <div class="proyecto-header" id="proyecto-header">
                     <img src="./assets/MathQuiz.jpg" alt="Imagen del proyecto">
                 </div>
                 <div class="proyecto-contenido">
                     <h3 class="nombre" id="nombre">Math Quiz</h3>
-                    <div class="buttons-vista d-flex">
+                    <div class="buttons-vista">
                       <button>
-                        <fa-icon class="butt-vista" [icon]="faGithub"></fa-icon>
+                        <fa-icon class="button" [icon]="faGithub"></fa-icon>
                       </button>
                       <button>
-                        <fa-icon class="butt-vista" [icon]="faDesktop"></fa-icon>
+                        <fa-icon class="button" [icon]="faDesktop"></fa-icon>
                       </button>
                     </div>
                 </div>
