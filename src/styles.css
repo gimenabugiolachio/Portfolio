@@ -61,6 +61,16 @@
   overflow: hidden;
 }
 
+.section1{
+  padding: 4em 0 2em;
+  overflow: hidden;
+}
+
+.contacto{
+  padding: 5em 0 2em;
+  overflow: hidden;
+}
+
 .titulo-section {
   text-align: center;
   position: relative;

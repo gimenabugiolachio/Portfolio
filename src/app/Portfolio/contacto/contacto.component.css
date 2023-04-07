@@ -1,3 +1,29 @@
+.contacto{
+  height: 90vh;
+}
+
+.img-contacto{
+  position: absolute;
+}
+
+.img-fluid{
+  position: relative;
+  left: 28em;
+  top: -2em;
+  height: 20em;
+  animation: move 5s linear infinite;
+}
+
+@keyframes move{
+  0%, 100%{
+    transform: translateY(10px);
+  }
+  50%{
+    transform: translateY(-15px);
+  }
+}
+
+
 
 .contacto-container {
   display: flex;

@@ -16,6 +16,7 @@ import { ProyectosComponent } from './Portfolio/proyectos/proyectos.component';
 import { ContactoComponent } from './Portfolio/contacto/contacto.component';
 import { FooterComponent } from './Portfolio/footer/footer.component';
 import { IniciarSesionComponent } from './Portfolio/iniciar-sesion/iniciar-sesion.component';
+import { AcercaaComponent } from './Portfolio/acercaa/acercaa.component';
 
 
 
@@ -32,6 +33,7 @@ import { IniciarSesionComponent } from './Portfolio/iniciar-sesion/iniciar-sesio
     ContactoComponent,
     FooterComponent,
     IniciarSesionComponent,
+    AcercaaComponent,
   ],
   imports: [
     BrowserModule,

@@ -64,23 +64,6 @@ ul{
   margin-bottom: 0.5em;
 }
 
-.buttons{
-  position: absolute;
-  display: flex;
-  left: 90%;
-}
-
-.buttons button{
-  border: none;
-  margin-right: .5em;
-  background-color: transparent;
-  color: #f3f3f3;
-}
-
-.buttons button:hover{
-  color: #D9A0BB;
-}
-
 .fechas{
   font-size: calc(.4em + .3vw);
   position: relative;
@@ -98,6 +81,8 @@ ul{
 }
 
 .icon-form{
+  position: relative;
+  top: .1em;
   font-size: calc(.6em + .5vw);
   transition: .3s;
 }
