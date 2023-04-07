@@ -7,7 +7,6 @@ a {
   margin: 1em 0;
 }
 
-
 .acerca-img {
   position: relative;
   left: -7.9em;
@@ -40,7 +39,7 @@ a {
   border-left: 1px solid rgba(255, 255, 255, 0.5) ;
 }
 
-.buttons-acerca {
+.button-acerca {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
