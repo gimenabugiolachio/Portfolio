@@ -1,6 +1,12 @@
 <section id="acerca">
-  <app-sobre></app-sobre>
-  <app-formacion></app-formacion>
-  <app-skills></app-skills>
+  <div data-aos="zoom-in-up" class="d-flex justify-content-center">
+    <h2 class="h2 titulo-section">Acerca</h2>
+  </div>
+  <button mat-button [matMenuTriggerFor]="menu">Menu</button>
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item><a href="#" [routerLink]="[ '/sobreMi' ]">Sobre Mi</a></button>
+    <button mat-menu-item><a href="#" [routerLink]="[ '/sobreMi' ]">Formación</a></button>
+    <button mat-menu-item><a href="#" [routerLink]="[ '/sobreMi' ]">Hard & Soft Skills</a></button>
+  </mat-menu>
 </section>
 
