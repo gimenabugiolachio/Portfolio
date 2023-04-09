@@ -15,11 +15,10 @@ import { SkillsComponent } from './Portfolio/skills/skills.component';
 import { ProyectosComponent } from './Portfolio/proyectos/proyectos.component';
 import { ContactoComponent } from './Portfolio/contacto/contacto.component';
 import { FooterComponent } from './Portfolio/footer/footer.component';
-import { IniciarSesionComponent } from './Portfolio/iniciar-sesion/iniciar-sesion.component';
 import { AcercaaComponent } from './Portfolio/acercaa/acercaa.component';
-
-
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatMenuModule} from '@angular/material/menu';
+import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,7 +31,6 @@ import { AcercaaComponent } from './Portfolio/acercaa/acercaa.component';
     ProyectosComponent,
     ContactoComponent,
     FooterComponent,
-    IniciarSesionComponent,
     AcercaaComponent,
   ],
   imports: [
@@ -42,6 +40,9 @@ import { AcercaaComponent } from './Portfolio/acercaa/acercaa.component';
     NgbModule,
     SwiperModule,
     HttpClientModule,
+    BrowserAnimationsModule,
+    MatMenuModule,
+    MatSlideToggleModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

@@ -1,11 +1,15 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { PortfolioComponent } from './Portfolio/portfolio/portfolio.component';
-import { IniciarSesionComponent } from './Portfolio/iniciar-sesion/iniciar-sesion.component';
+import { SobreComponent } from './Portfolio/sobre/sobre.component';
+import { FormacionComponent } from './Portfolio/formacion/formacion.component';
+import { SkillsComponent } from './Portfolio/skills/skills.component';
 
 const routes: Routes = [
   {path:'', component: PortfolioComponent},
-  {path: 'inicio-sesion', component: IniciarSesionComponent }
+  {path: 'sobreMi', component: SobreComponent},
+  {path: 'formacion', component:FormacionComponent},
+  {path: 'skills', component: SkillsComponent}
 ];
 
 @NgModule({
