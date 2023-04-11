@@ -1,6 +1,7 @@
 footer{
   height: 60px;
   border-top: 0.5px solid #f3f3f34d;
+  background-color: #f3f3f3;
 }
 
 span{
@@ -26,7 +27,7 @@ span{
 .redes-link a {
   text-decoration: none;
   font-size: .9em;
-  color: #f3f3f3;
+  color: #232323;
   margin-left: 1em;
 }
 
@@ -37,7 +38,7 @@ span{
   align-items: center;
   justify-content: center;
   border-radius: 20%;
-  outline: 2px solid #f3f3f3;
+  outline: 2px solid #232323;
   transition-property: outline-offset, outline-color, background-color;
   transition-duration: .25s;
 }

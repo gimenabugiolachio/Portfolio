@@ -16,6 +16,15 @@
   font-family: 'Cairo', sans-serif;*/
 }
 
+.modo {
+  background-color: #f3f3f3;
+  color: #232323;
+}
+
+.dark-mode {
+  background-color: #232323;
+  color: #f3f3f3;
+}
 
 /*Buttons*/
 .button {
@@ -23,7 +32,7 @@
   display: inline-flex;
   align-items: center;
   column-gap: .5em;
-  background-color: 	#808080;
+  background-color: #232323;
   color: #f3f3f3;
   padding: .75em 1.4em;
   border-radius: .25em;
@@ -51,7 +60,7 @@
   transform: scale(1);
   background: #11bebe;
   background: -webkit-linear-gradient(to right, #A83279, #11bebe);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #A83279, #11bebe); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to right, #A83279, #11bebe);
   transition: 0.4s ease;
 }
 

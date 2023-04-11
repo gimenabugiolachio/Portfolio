@@ -11,11 +11,11 @@ import { NgbDropdownModule } from '@ng-bootstrap/ng-bootstrap';
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.css'],
-  
+
 })
 
 export class NavbarComponent implements OnInit {
-  isLogged = false;
+
 
   faUser=faUser;
   faBars=faBars;
@@ -25,9 +25,7 @@ export class NavbarComponent implements OnInit {
 
   ngOnInit(): void { }
 
-  login():void{
-    this.router.navigate(['/inicio-sesion']);
-  }
+
 
 
 }

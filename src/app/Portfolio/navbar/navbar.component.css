@@ -1,17 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap');
 
-.navbar{
+nav{
+  position: fixed;
+  width: 100vw;
   border-bottom: 0.5px solid #f3f3f34d;
-}
-
-.navbar-brand span{
-  color: #A83279;
+  background-color: #f3f3f3;
 }
 
 .toggle{
   position: relative;
   top: .4em;
   margin-left: 1em;
+  margin-right: 1em;
 }
 
 .nav-item {
@@ -19,6 +19,15 @@
   margin-left: 1.5em;
   font-size: calc(.6em + .5vw);
   text-align: center;
+}
+
+.nav-logo{
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1em;
+}
+
+.navbar-brand span{
+  color: #D49BB0;
 }
 
 .nav-item::before {

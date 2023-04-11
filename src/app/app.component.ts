@@ -8,6 +8,7 @@ import * as AOS from 'aos'
 })
 export class AppComponent {
   title = 'Gimena Bugiolachio';
+  
 
 ngOnInit(){
   AOS.init()

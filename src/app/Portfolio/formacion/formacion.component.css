@@ -48,6 +48,11 @@ ul{
   height: 115px;
 }
 
+.content{
+  position: relative;
+  bottom: 1em;
+}
+
 .educacion-card-content {
   padding: .9em;
   width: 100%;

@@ -23,8 +23,6 @@
   }
 }
 
-
-
 .contacto-container {
   display: flex;
   flex-direction: row;
@@ -104,7 +102,7 @@
   border: 2px solid #f3f3f3;
   background-color: transparent;
   padding: .4em .8em;
-  color: #f3f3f3;
+  color: #232323;
   border-radius: .5em;
   letter-spacing: .5px;
   transition: .3s;
@@ -115,11 +113,11 @@
   position: absolute;
   top: 0;
   left: 25px;
-  color: #f3f3f3;
-  background-color: #211835;
+  color: #232323;
+  background-color: #fff;
   border-radius: 3%;
   font-size: calc(.5em + .4vw);
-  padding: 0 .4em;
+  padding: 0 .2em;
   pointer-events: none;
   z-index: 500;
   transform: translateY(-50%);

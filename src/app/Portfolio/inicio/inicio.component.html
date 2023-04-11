@@ -29,12 +29,15 @@
     </div>
     <div class="inicio-data col-xs-12 col-sm-12 col-lg-12 col-md-12">
       <h1 data-aos="fade-right" data-aos-delay="100" class="h1 inicio-titulo">Hola, mi nombre es Gimena.</h1>
-      <div id="typewriter"><p>Soy <span  class="gradient-text">{{text}}</span></p></div>
+      <div id="typewriter">
+        <p>Soy <span class="gradient-text">{{text}}</span></p>
+      </div>
     </div>
     <div class="botton-container col-xs-12 col-sm-12 col-lg-12 col-md-12">
-      <a data-aos="fade-right" data-aos-delay="200" href="#sobreMi" class="button mas-info">
-        Más info</a>
-        <a data-aos="fade-right" data-aos-delay="300" href="#contacto" class="button mas-info">Contactame</a>
+      <a data-aos="fade-right" data-aos-delay="200" href="#sobreMi" aria-current="page" href="#"
+        [routerLink]="['/acerca']" class="button mas-info">
+      Más info</a>
+      <a data-aos="fade-right" data-aos-delay="300" href="#contacto" class="button mas-info">Contactame</a>
     </div>
   </div>
 </section>
