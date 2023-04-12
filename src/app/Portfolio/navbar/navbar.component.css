@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap');
 
-nav{
+nav {
   position: fixed;
   width: 100vw;
   border-bottom: 0.5px solid #f3f3f34d;
   background-color: #f3f3f3;
 }
 
-.toggle{
+.toggle {
   position: relative;
   top: .4em;
   margin-left: 1em;
@@ -21,12 +21,12 @@ nav{
   text-align: center;
 }
 
-.nav-logo{
+.nav-logo {
   font-family: 'DM Sans', sans-serif;
   font-size: 1em;
 }
 
-.navbar-brand span{
+.navbar-brand span {
   color: #D49BB0;
 }
 
@@ -39,8 +39,10 @@ nav{
   width: 0;
   border-radius: 2px;
   background: #11bebe;
-  background: -webkit-linear-gradient(to right, #A83279, #11bebe);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #A83279, #11bebe); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: -webkit-linear-gradient(to right, #D49BB0, #11bebe);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #D49BB0, #11bebe);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   transition: 0.4s ease;
 }
 
@@ -52,7 +54,7 @@ nav{
   list-style: none;
 }
 
-.logo a{
+.logo a {
   text-decoration: none;
   font-size: calc(.5em + .4vw);
 }
@@ -61,7 +63,7 @@ nav{
   text-decoration: none;
 }
 
-.nav_container{
+.nav_container {
   transition: all .3s;
 }
 
@@ -69,8 +71,15 @@ nav{
   transform: translateY(7px);
 }
 
+.theme {
+  position: relative;
+  top: .4em;
+  margin-left: 1em;
+  margin-right: 1em;
+}
 
-@media screen and (max-width: 992px){
+
+@media screen and (max-width: 992px) {
   .nav-item:hover::after {
     width: 0%;
   }
