@@ -37,3 +37,7 @@ video{
   justify-content: space-around;
   width: 20em;
 }
+
+a{
+  text-decoration: none;
+}
