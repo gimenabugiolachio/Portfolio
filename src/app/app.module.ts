@@ -19,7 +19,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 import { AcercaComponent } from './Portfolio/acerca/acerca.component';
-import { SwitchThemeComponent } from './Portfolio/switch-theme/switch-theme.component';
 import { FormsModule } from '@angular/forms';
 
 @NgModule({
@@ -35,7 +34,6 @@ import { FormsModule } from '@angular/forms';
     ContactoComponent,
     FooterComponent,
     AcercaComponent,
-    SwitchThemeComponent,
   ],
   imports: [
     BrowserModule,

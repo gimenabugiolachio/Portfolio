@@ -4,7 +4,11 @@ nav {
   position: fixed;
   width: 100vw;
   border-bottom: 0.5px solid #f3f3f34d;
-  background-color: #f3f3f3;
+  background: #232323;
+}
+
+.navbar-nav{
+  margin-right: 2em;
 }
 
 .toggle {
@@ -38,10 +42,10 @@ nav {
   height: 2px;
   width: 0;
   border-radius: 2px;
-  background: #11bebe;
-  background: -webkit-linear-gradient(to right, #D49BB0, #11bebe);
+  background: #21aaaa;
+  background: -webkit-linear-gradient(to right, #D49BB0, #21aaaa);
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #D49BB0, #11bebe);
+  background: linear-gradient(to right, #D49BB0, #21aaaa);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   transition: 0.4s ease;
 }
@@ -55,11 +59,13 @@ nav {
 }
 
 .logo a {
+
   text-decoration: none;
   font-size: calc(.5em + .4vw);
 }
 
 .navbar li a {
+  color: #f3f3f3;
   text-decoration: none;
 }
 
@@ -70,14 +76,6 @@ nav {
 .nav li a:hover {
   transform: translateY(7px);
 }
-
-.theme {
-  position: relative;
-  top: .4em;
-  margin-left: 1em;
-  margin-right: 1em;
-}
-
 
 @media screen and (max-width: 992px) {
   .nav-item:hover::after {

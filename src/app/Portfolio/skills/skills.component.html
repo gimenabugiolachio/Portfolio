@@ -1,126 +1,74 @@
-<section id="skills" class="skills section">
+<section id="skills" class="skills section1">
   <div data-aos="zoom-in-up" class="d-flex justify-content-center">
-    <h2 class="h2 titulo-section">Hard & Soft Skills</h2>
-    <button *ngIf="isLogged" class="button-plus"><fa-icon [icon]="faCirclePlus"></fa-icon></button>
-    <button *ngIf="isLogged" class="button-edit"><fa-icon [icon]="faPenToSquare"></fa-icon></button>
+    <h2 class="titulo-section">Skills</h2>
   </div>
-  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-        aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-        aria-label="Slide 2"></button>
-    </div>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <div class="row hard-skills">
-          <div class="col-sm-3">
-            <div data-aos="fade-down" data-aos-delay="100" class="skill-box">
-              <div class="skill-ico">
-                <a href="#" target="_blank" class="ico-circle"><fa-icon [icon]="html"></fa-icon></a>
+    <div class="skills-container container">
+      <div class="skills-content">
+        <h3 class="skills-title">Desarrollo Web</h3>
+        <div class="skills-box">
+          <div class="skills-group">
+            <div class="skills-data"><fa-icon [icon]="angular"></fa-icon>
+              <div>
+                <h3 class="skills-name">Angular</h3>
+              </div>
+            </div>
+            <div class="skills-data"><fa-icon [icon]="nodejs"></fa-icon>
+              <div>
+                <h3 class="skills-name">NodeJS</h3>
+              </div>
+            </div>
+            <div class="skills-data"><fa-icon [icon]="java"></fa-icon>
+              <div>
+                <h3 class="skills-name">Java</h3>
               </div>
             </div>
           </div>
-          <div class="col-sm-3">
-            <div data-aos="fade-down" data-aos-delay="200" class="skill-box">
-              <div class="skill-ico">
-                <a class="ico-circle" href="#" target="_blank"><fa-icon [icon]="css">
-                </fa-icon> </a>
+          <div class="skills-group">
+            <div class="skills-data"><fa-icon [icon]="js"></fa-icon>
+              <div>
+                <h3 class="skills-name">JavaScript</h3>
+              </div>
+            </div>
+            <div class="skills-data"><fa-icon [icon]="bootstrap"></fa-icon>
+              <div>
+                <h3 class="skills-name">Bootstrap</h3>
+              </div>
+            </div>
+            <div class="skills-data"><fa-icon [icon]="mysql"></fa-icon>
+              <div>
+                <h3 class="skills-name">MySQL</h3>
               </div>
             </div>
           </div>
-          <div class="col-sm-3">
-            <div data-aos="fade-down" data-aos-delay="300" class="skill-box">
-              <div class="skill-ico">
-                <a href="#" class="ico-circle" target="_blank"><fa-icon [icon]="js"></fa-icon></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-3">
-            <div data-aos="fade-down" data-aos-delay="400" class="skill-box">
-              <div class="skill-ico">
-                <a href="#" target="_blank" class="ico-circle"><fa-icon [icon]="angular"></fa-icon></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-3">
-            <div data-aos="fade-down" data-aos-delay="500" class="skill-box">
-              <div class="skill-ico">
-                <a href="#" target="_blank" class="ico-circle"><fa-icon [icon]="bootstrap"></fa-icon></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-3">
-            <div data-aos="fade-down" data-aos-delay="600" class="skill-box">
-              <div class="skill-ico">
-                <a href="#" target="_blank" class="ico-circle"><fa-icon [icon]="java"></fa-icon></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-3">
-            <div data-aos="fade-down" data-aos-delay="700" class="skill-box">
-              <div class="skill-ico">
-                <a href="#" target="_blank" class="ico-circle"><fa-icon [icon]="mysql"></fa-icon></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-3">
-            <div data-aos="fade-down" data-aos-delay="800" class="skill-box">
-              <div class="skill-ico">
-                <a href="#" target="_blank" class="ico-circle"><fa-icon [icon]="diseno"></fa-icon></a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Hard Skills</h5>
         </div>
       </div>
-      <div class="carousel-item">
-        <div class="row soft-skills">
-          <div class="col-sm-4">
-            <div class="skill-box">
-              <div class="skill-ico">
-                <span class="ico-circle"><fa-icon [icon]="idea"></fa-icon></span>
+      <div class="skills-content">
+        <h3 class="skills-title">Análisis de Datos</h3>
+        <div class="skills-box">
+          <div class="skills-group">
+            <div class="skills-data"><span class="material-symbols-outlined">
+                analytics
+              </span>
+              <div>
+                <h3 class="skills-name">Google Analytics</h3>
               </div>
-              <div class="skill-content">
-                <h2 class="skill-title">Creatividad</h2>
+            </div>
+            <div class="skills-data"><span class="material-symbols-outlined">
+                bar_chart
+              </span>
+              <div>
+                <h3 class="skills-name">Tableau</h3>
+              </div>
+            </div>
+            <div class="skills-data"><span class="material-symbols-outlined">
+                monitoring
+              </span>
+              <div>
+                <h3 class="skills-name">Power BI</h3>
               </div>
             </div>
           </div>
-          <div class="col-sm-4">
-            <div class="skill-box">
-              <div class="skill-ico">
-                <span class="ico-circle"><fa-icon [icon]="resolucion"></fa-icon></span>
-              </div>
-              <div class="skill-content">
-                <h2 class="skill-title">Resolución de problemas</h2>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="skill-box">
-              <div class="skill-ico">
-                <span class="ico-circle"><fa-icon [icon]="equipo"></fa-icon></span>
-              </div>
-              <div class="skill-content">
-                <h2 class="skill-title">Trabajo en equipo</h2>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Soft Skills</h5>
         </div>
       </div>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
 </section>

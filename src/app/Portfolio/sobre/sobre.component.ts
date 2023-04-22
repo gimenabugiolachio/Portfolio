@@ -3,11 +3,6 @@ import { faSuitcase } from '@fortawesome/free-solid-svg-icons';
 import { faHeadset } from '@fortawesome/free-solid-svg-icons';
 import { faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 import { faFileLines } from '@fortawesome/free-solid-svg-icons';
-import { faCirclePlus } from '@fortawesome/free-solid-svg-icons';
-import { faPenToSquare } from '@fortawesome/free-solid-svg-icons';
-
-
-
 
 @Component({
   selector: 'app-sobre',
@@ -16,20 +11,13 @@ import { faPenToSquare } from '@fortawesome/free-solid-svg-icons';
 })
 export class SobreComponent implements OnInit {
 
-
   faSuitcase = faSuitcase;
   faHeadset = faHeadset;
   faPaperPlane = faPaperPlane;
   faFileLines = faFileLines;
-  faCirclePlus = faCirclePlus;
-  faPenToSquare = faPenToSquare;
-
-
 
   constructor() {}
 
-
-  isLogged = false;
   ngOnInit(): void {}
 
 }
