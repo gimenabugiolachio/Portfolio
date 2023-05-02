@@ -24,25 +24,22 @@
 
 .proyecto-card {
   border-radius: 20px;
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.13);
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
-  backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.25);
-  border-top: 1px solid rgba(255, 255, 255, 0.5);
-  border-left: 1px solid rgba(255, 255, 255, 0.5) ;
+  border: 1px solid rgba(255, 255, 255, 0.5);
   overflow: hidden;
   height: 270px;
   margin-bottom: 2em;
   list-style: none;
   list-style-type: none;
   text-align: center;
-  -webkit-backdrop-filter: blur(1em);
-  transition: all .3s;
+  transition: all .1s;
 }
 
 .proyecto-card:hover {
-  border: 1px solid #D49BB0;
   transform: scale(1.1);
+
 }
 
 .swiper-pagination-bullet {
@@ -77,7 +74,6 @@
   font-size: .9vw;
 }
 
-
 .buttons-vista button {
   margin-left: .5em;
   background: none;
@@ -88,6 +84,13 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
+}
+
+@media only screen and (max-width: 400px){
+  #nombre {
+    font-size: 3vw;
+    margin-bottom: 2em;
+  }
 }
 
 

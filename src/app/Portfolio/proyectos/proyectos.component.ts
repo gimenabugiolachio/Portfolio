@@ -2,8 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import SwiperCore, { Keyboard, Pagination, Navigation, Autoplay, SwiperOptions } from 'swiper';
 SwiperCore.use([Keyboard, Pagination, Navigation, Autoplay]);
 import { faCirclePlus } from '@fortawesome/free-solid-svg-icons';
-import { faPenToSquare } from '@fortawesome/free-solid-svg-icons';
-import { faTrashCan } from '@fortawesome/free-solid-svg-icons';
 import { faDesktop } from '@fortawesome/free-solid-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
@@ -13,8 +11,6 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons';
   styleUrls: ['./proyectos.component.css']
 })
 export class ProyectosComponent implements OnInit {
-  faPenToSquare=faPenToSquare;
-  faTrashCan=faTrashCan;
   faCirclePlus=faCirclePlus;
   faDesktop=faDesktop;
   faGithub=faGithub;
@@ -57,7 +53,6 @@ export class ProyectosComponent implements OnInit {
 
 
   constructor() { }
-  isLogged = false;
   ngOnInit(): void {
   }
 

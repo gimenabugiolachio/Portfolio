@@ -9,8 +9,8 @@ a {
 
 .acerca-img {
   position: relative;
-  left: -7.9em;
-  width: 26em;
+  left: -1em;
+  width: 30em;
 
 }
 
@@ -31,12 +31,9 @@ a {
 .card {
   padding: 1em;
   border-radius: 20px;
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.13);
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.25);
-  border-top: 1px solid rgba(255, 255, 255, 0.5);
-  border-left: 1px solid rgba(255, 255, 255, 0.5) ;
+  border: 1px solid rgba(255, 255, 255, 0.5);
 }
 
 .button-acerca {
@@ -55,11 +52,11 @@ a {
 @media only screen and (max-width: 400px) {
   .acerca-img {
     width: 10em;
+    left: -7.5em;
   }
 
-  .buttons-acerca{
-    top: .5em;
-    width: 90vw;
+  .button-acerca{
+    top: 1em;
   }
 
 }

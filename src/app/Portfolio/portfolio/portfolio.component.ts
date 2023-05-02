@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { faArrowAltCircleUp } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-portfolio',
@@ -7,8 +6,7 @@ import { faArrowAltCircleUp } from '@fortawesome/free-solid-svg-icons';
   styleUrls: ['./portfolio.component.css']
 })
 export class PortfolioComponent implements OnInit {
-  faArrowAltCircleUp=faArrowAltCircleUp;
-  constructor() { }
+    constructor() { }
 
   ngOnInit(): void { }
 

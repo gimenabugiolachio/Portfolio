@@ -1,17 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap');
 
-.navbar{
+nav {
+  position: fixed;
+  width: 100vw;
   border-bottom: 0.5px solid #f3f3f34d;
+  background: #232323;
 }
 
-.navbar-brand span{
-  color: #A83279;
+.navbar-nav{
+  margin-right: 2em;
 }
 
-.toggle{
+.toggle {
   position: relative;
   top: .4em;
   margin-left: 1em;
+  margin-right: 1em;
 }
 
 .nav-item {
@@ -19,6 +23,16 @@
   margin-left: 1.5em;
   font-size: calc(.6em + .5vw);
   text-align: center;
+}
+
+.nav-logo {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1em;
+  color: #f3f3f3;
+}
+
+.navbar-brand span {
+  color: #D49BB0;
 }
 
 .nav-item::before {
@@ -29,9 +43,11 @@
   height: 2px;
   width: 0;
   border-radius: 2px;
-  background: #11bebe;
-  background: -webkit-linear-gradient(to right, #A83279, #11bebe);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #A83279, #11bebe); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #21aaaa;
+  background: -webkit-linear-gradient(to right, #D49BB0, #21aaaa);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #D49BB0, #21aaaa);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   transition: 0.4s ease;
 }
 
@@ -43,16 +59,17 @@
   list-style: none;
 }
 
-.logo a{
+.logo a {
   text-decoration: none;
   font-size: calc(.5em + .4vw);
 }
 
 .navbar li a {
+  color: #f3f3f3;
   text-decoration: none;
 }
 
-.nav_container{
+.nav_container {
   transition: all .3s;
 }
 
@@ -60,9 +77,8 @@
   transform: translateY(7px);
 }
 
-
-@media screen and (max-width: 992px){
-  .nav-item:hover::after {
+@media screen and (max-width: 992px) {
+  .nav-item:hover::before {
     width: 0%;
   }
 }

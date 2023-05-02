@@ -1,131 +1,48 @@
-@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+.inicio{
+  width: 100%;
+  min-height: 100vh;
+  height: auto;
+  overflow: hidden;
+  position: relative;
+  background-image: url('src/assets/fon-01.png');
+  background-size: cover;
+  background-position: center;
+}
 
-.container{
-  max-width: 1250px;
-  margin-right: auto;
+.text{
+  position: relative;
+  top: 16em;
+  left: 1em;
+  display: flex;
+  flex-direction: column;
+}
+
+.inicio-data{
+  margin-bottom: 2em;
+}
+
+.botton-container{
+  display: flex;
+  justify-content: space-around;
+  width: 20em;
 }
 
 a{
   text-decoration: none;
-  color: #f3f3f3;
 }
 
-#inicio{
-  background-attachment: fixed;
-  background-position: center center;
-  height: 100vh;
-  position: relative;
-  background: #040404 url("/assets/fondoInicio-01.jpg") top right no-repeat;
-  background-size: cover;
-}
-
-.inicio-container{
-  position: relative;
-  height: 100%;
-  align-items: center;
-}
-
+@media only screen and (max-width: 400px){
 .inicio-titulo{
-  font-size: calc(1em + 1vw);
+  font-size: 4.5vw;
 }
 
-#typewriter {
-  overflow: hidden;
-  white-space: nowrap;
-  position: absolute;
-}
-
-.gradient-text{
-display: inline-block;
-background-image: linear-gradient(-45deg, #A83279, #11bebe);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-}
-
-#typewriter p{
-  font-size: calc(.6em + .8vw);
-  margin-bottom: .75em;
-}
-
-.inicio-social{
-  position: relative;
-  top: 7em;
-  left: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.inicio-social-links{
-  display: inline-flex;
-  column-gap: 1em;
-}
-
-.inicio-social-links a{
-  text-decoration: none;
-  color: #f3f3f3;
-  font-size: 1.1em;
-}
-
-.mas-info{
-  font-size: calc(.6em + .5vw);
-}
-
-.icon {
-  width: 40px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 20%;
-  outline: 2px solid #f3f3f3;
-  transition-property: outline-offset, outline-color, background-color;
-  transition: .2s;
-  transition-duration: .25s;
-}
-
-.icon:hover {
-  outline-offset: 2px;
-}
-
-.icon:hover {
-  transform: translateY(-5px);
-}
-
-.icon-instagram:hover {
-  background-image: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-  outline-color: #ff0080;
-}
-
-.icon-facebook:hover {
-  background-color: #3b5998;
-  outline-color: #3b5998;
-}
-
-.icon-github:hover {
-  background-color: #4c2882;
-  outline-color: #4c2882;
-}
-
-.icon-twitter:hover {
-  background-color: #00acee;
-  outline-color: #00acee;
-}
-
-.icon-linkedin:hover {
-  background-color: #0072b1;
-  outline-color: #0072b1;
-}
-
-.inicio-data{
-  position: relative;
-  top: 12em;
+#typewriter{
+  font-size: 3.5vw;
 }
 
 .botton-container{
+  width: 15em;
   position: relative;
-  top: 15em;
-  display: flex;
-  justify-content: space-around;
-  width: 25%;
+  top: -2em;
+}
 }
