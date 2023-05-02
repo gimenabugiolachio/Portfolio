@@ -1,30 +1,16 @@
-.img-contacto{
-  position: absolute;
-}
 
-.img-fluid{
-  position: relative;
-  left: 28em;
-  top: -2em;
-  height: 20em;
-  animation: move 5s linear infinite;
-}
 
-@keyframes move{
-  0%, 100%{
-    transform: translateY(10px);
-  }
-  50%{
-    transform: translateY(-15px);
-  }
+.contacto-contenido h6{
+text-align: center;
+margin-bottom: 1em;
+letter-spacing: 1px;
 }
 
 .contacto-container {
   display: flex;
   flex-direction: row;
-  column-gap: 10em;
   justify-content: center;
-  align-items: center;
+  align-items: baseline;
   margin-top: 7em;
 }
 
@@ -38,22 +24,16 @@
   position: relative;
   top: -2em;
   border-radius: 20px;
-  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.13);
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.25);
-  border-top: 1px solid rgba(255, 255, 255, 0.5);
-  border-left: 1px solid rgba(255, 255, 255, 0.5) ;
   padding: .4em;
   width: 15em;
-  border-radius: .5em;
   text-align: center;
 }
 
 .icono-card {
   font-size: calc(.8em + .7vw);
-  position: relative;
-  top: .5em;
 }
 
 .titulo,
@@ -61,23 +41,18 @@
   font-size: calc(.5em + .5vw);
 }
 
-.titulo {
-  position: relative;
-  top: 1em;
-}
 
 .redes-link {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   text-align: center;
-  padding: 0.5rem;
 }
 
 .redes-link a {
   text-decoration: none;
   font-size: 1.3vw;
   color: #f3f3f3;
-  margin-bottom: 1em;
+  margin-left: 1em;
 }
 
 .icon {
@@ -153,5 +128,15 @@
 @media only screen and (max-width: 400px) {
   .contacto-container {
     flex-direction: column;
+    align-items: center;
+    margin-top: 4em;
+  }
+
+  .redes-link a{
+    font-size: 3.5vw;
+  }
+
+  .contacto-info{
+    margin-bottom: 2em;
   }
 }

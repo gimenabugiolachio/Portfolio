@@ -1,16 +1,18 @@
 .skills-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  column-gap: 1.5rem;
+  display: flex;
+  flex-direction: row;
   justify-content: center;
-  padding: 2em;
+  margin-top: 2em;
+  margin-bottom: 2em;
 }
 
 .skills-content {
   border: 1px solid rgba(255, 255, 255, 0.5);
-  padding: 2rem 1rem;
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
+  padding: 2rem 3rem;
   border-radius: 1.25rem;
+  background: rgba(255, 255, 255, 0.13);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
+  margin-left: 1em;
 }
 
 .skills-group {
@@ -42,9 +44,17 @@
     line-height: 18px;
 }
 
+fa-icon,
+span{
+  color: #D49BB0;
+}
+
 @media only screen and (max-width: 400px) {
-  .row {
-    height: 70vh;
-    width: 90vw;
-  }
+ .skills-container{
+  flex-direction: column;
+ }
+
+ .skills-content{
+  margin-bottom: 1em;
+ }
 }

@@ -28,6 +28,7 @@ nav {
 .nav-logo {
   font-family: 'DM Sans', sans-serif;
   font-size: 1em;
+  color: #f3f3f3;
 }
 
 .navbar-brand span {
@@ -59,7 +60,6 @@ nav {
 }
 
 .logo a {
-
   text-decoration: none;
   font-size: calc(.5em + .4vw);
 }
@@ -78,7 +78,7 @@ nav {
 }
 
 @media screen and (max-width: 992px) {
-  .nav-item:hover::after {
+  .nav-item:hover::before {
     width: 0%;
   }
 }

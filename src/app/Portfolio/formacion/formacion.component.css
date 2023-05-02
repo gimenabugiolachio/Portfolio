@@ -24,11 +24,9 @@ ul{
   list-style: none;
   list-style-type: none;
   border-radius: 20px;
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.13);
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
-  backdrop-filter: blur(10px);
-  border-top: 1px solid rgba(255, 255, 255, 0.5);
-  border-left: 1px solid rgba(255, 255, 255, 0.5) ;
+  border: 1px solid rgba(255, 255, 255, 0.5);
   margin: 1em 0;
   transition: all .3s;
 }
@@ -41,11 +39,6 @@ ul{
   height: 115px;
 }
 
-.content{
-  position: relative;
-  bottom: 1em;
-}
-
 .educacion-card-content {
   padding: .9em;
   width: 100%;
@@ -53,19 +46,17 @@ ul{
 
 .educacion-card-content h3 {
   font-size: calc(.6em + .3vw);
+  margin-bottom: 1.5em;
 }
 
 .text {
   color: #c2c0c0;
   font-size: calc(.4em + .3vw);
   letter-spacing: 1px;
-  margin-bottom: 0.5em;
 }
 
 .fechas{
   font-size: calc(.4em + .3vw);
-  position: relative;
-  top: -.5em;
 }
 
 .certi{
@@ -91,7 +82,5 @@ ul{
 
 
 @media only screen and (max-width: 400px){
-  .educacion-cards{
-    margin-top: -2em;
-  }
+
 }

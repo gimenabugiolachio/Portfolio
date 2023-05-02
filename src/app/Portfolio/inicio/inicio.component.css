@@ -1,23 +1,12 @@
-
-*{
-  margin: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
 .inicio{
   width: 100%;
   min-height: 100vh;
   height: auto;
   overflow: hidden;
   position: relative;
-}
-
-video{
-  left: -1em;
-  position: fixed;
-  width: 120%;
-  z-index: 0;
+  background-image: url('src/assets/fon-01.png');
+  background-size: cover;
+  background-position: center;
 }
 
 .text{
@@ -40,4 +29,20 @@ video{
 
 a{
   text-decoration: none;
+}
+
+@media only screen and (max-width: 400px){
+.inicio-titulo{
+  font-size: 4.5vw;
+}
+
+#typewriter{
+  font-size: 3.5vw;
+}
+
+.botton-container{
+  width: 15em;
+  position: relative;
+  top: -2em;
+}
 }
